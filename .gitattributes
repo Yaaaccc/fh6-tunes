@@ -1,0 +1,8 @@
+# 保证 Windows 批处理检出时仍是 CRLF —— LF 换行会让 cmd 把多行粘连成乱码命令
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+# 二进制/资源文件不做换行转换
+*.png binary
+*.jpg binary
+*.ico binary

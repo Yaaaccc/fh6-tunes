@@ -1,0 +1,3451 @@
+{
+ "source": "腾讯文档 地平线6线上车辆调校推荐 / 季节赛 每周更新",
+ "fetched": "2026-09-29",
+ "weeks": [
+  {
+   "title": "系列赛5 英国汽车 冬季",
+   "date": "9月24日 至 10月1日",
+   "hdr": 12,
+   "events": [
+    {
+     "type": "照片挑战",
+     "name": "#香车雅竹",
+     "car": "在 竹林 拍摄一张任意 迈凯伦 车辆照片",
+     "note": "在 竹林 拍摄一张任意 迈凯伦 车辆照片",
+     "tuner": "",
+     "code": "",
+     "reward": "表情 - 空手道大师",
+     "subs": [],
+     "level": "品牌/条件限定"
+    },
+    {
+     "type": "寻宝游戏",
+     "name": "霜山区",
+     "car": "霜山南区",
+     "note": "霜山南区",
+     "tuner": "",
+     "code": "",
+     "reward": "100,000点数",
+     "subs": [],
+     "level": "无车辆限制"
+    },
+    {
+     "type": "终极考验",
+     "name": "冬季拉力",
+     "car": "1984 欧宝 Manta 400",
+     "note": "车展购入 调校师: CaiGou YYY 调校代码: 661551952",
+     "tuner": "CaiGou YYY",
+     "code": "661551952",
+     "reward": "MG Metro 6R4",
+     "subs": [],
+     "level": "类别限定"
+    },
+    {
+     "type": "季节锦标赛",
+     "name": "乡村皮卡",
+     "car": "2021 RIVIAN R1T",
+     "note": "车展购入 调校师: Noa Miyako 调校代码: 456336816",
+     "tuner": "Noa Miyako",
+     "code": "456336816",
+     "reward": "捷豹 C-X75",
+     "subs": [],
+     "level": "类别限定"
+    },
+    {
+     "type": "季节锦标赛",
+     "name": "神车炸街",
+     "car": "1970 本田 S800",
+     "note": "车展购入 调校师: CaiGou YYY 调校代码: 167571468",
+     "tuner": "CaiGou YYY",
+     "code": "167571468",
+     "reward": "Reliant Supervan",
+     "subs": [],
+     "level": "类别限定"
+    },
+    {
+     "type": "漂移冲分赛",
+     "name": "霜山漂移冲分赛",
+     "car": "1965 MINI Cooper S",
+     "note": "车展购入 调校师: Noa Miyako 调校代码: 870654787",
+     "tuner": "Noa Miyako",
+     "code": "870654787",
+     "reward": "抽奖",
+     "subs": [],
+     "level": "推荐用车"
+    },
+    {
+     "type": "危险标志",
+     "name": "蔚蓝俯冲",
+     "car": "2020 路虎 Defender 110 X",
+     "note": "车展购入 调校师: CaiGou YYY 调校代码: 169852351",
+     "tuner": "CaiGou YYY",
+     "code": "169852351",
+     "reward": "抽奖",
+     "subs": [],
+     "level": "推荐用车"
+    },
+    {
+     "type": "测速区间",
+     "name": "高大树木",
+     "car": "2015 路虎 Range Rover Sport SVR",
+     "note": "车展购入 调校师: CaiGou YYY 调校代码: 147502440",
+     "tuner": "CaiGou YYY",
+     "code": "147502440",
+     "reward": "抽奖",
+     "subs": [],
+     "level": "推荐用车"
+    },
+    {
+     "type": "拓荒者门",
+     "name": "石部海上桥",
+     "car": "2015 路虎 Range Rover Sport SVR",
+     "note": "车展购入 调校师: CaiGou YYY 调校代码: 147502440",
+     "tuner": "CaiGou YYY",
+     "code": "147502440",
+     "reward": "抽奖",
+     "subs": [],
+     "level": "推荐用车"
+    },
+    {
+     "type": "地平线乐玩",
+     "name": "极速连接",
+     "car": "在 地平线竞速 中达成 3次 LINK 极速技术",
+     "note": "在 地平线竞速 中达成 3次 LINK 极速技术",
+     "tuner": "",
+     "code": "",
+     "reward": "Peel P50",
+     "subs": [],
+     "level": "无车辆限制"
+    },
+    {
+     "type": "地平线特技派对",
+     "name": "迷你游戏",
+     "car": "完成任意 地平线特技派对",
+     "note": "完成任意 地平线特技派对",
+     "tuner": "",
+     "code": "",
+     "reward": "服装 - 红黑工装裤",
+     "subs": [],
+     "level": "无车辆限制"
+    },
+    {
+     "type": "每月劲敌",
+     "name": "霜山冲刺赛",
+     "car": "完成一圈干净圈",
+     "note": "干净圈要求 无碰撞 无倒转 无自动驾驶",
+     "tuner": "",
+     "code": "",
+     "reward": "超级抽奖",
+     "subs": [],
+     "level": "无车辆限制"
+    },
+    {
+     "type": "每日挑战",
+     "name": "车友会",
+     "car": "在任意车友会停车",
+     "note": "在任意车友会停车",
+     "tuner": "",
+     "code": "",
+     "reward": "5,000点数",
+     "subs": [
+      {
+       "name": "极速技术",
+       "text": "达成 3次 极速技术"
+      },
+      {
+       "name": "拍摄照片",
+       "text": "拍摄一张 任意车辆 的 照片"
+      },
+      {
+       "name": "升级",
+       "text": "花费 15000CR点数 对 任意车辆 进行升级"
+      },
+      {
+       "name": "抽奖",
+       "text": "兑换 一次 抽奖或超级抽奖"
+      },
+      {
+       "name": "测速照相",
+       "text": "在 测速照相 获得至少 1星"
+      },
+      {
+       "name": "计时赛",
+       "text": "在 任意计时赛赛道 完成 1圈"
+      }
+     ],
+     "level": "无车辆限制"
+    },
+    {
+     "type": "每周挑战",
+     "name": "挑战一",
+     "car": "拥有并驾驶 2010 捷豹 C-X75",
+     "note": "车展购入 调校师: Noa Miyako 调校代码: 657753520",
+     "tuner": "Noa Miyako",
+     "code": "657753520",
+     "reward": "25,000点数",
+     "subs": [
+      {
+       "name": "挑战二",
+       "text": "在白川乡 拍摄一张 你的 2010 捷豹 C-X75"
+      },
+      {
+       "name": "挑战三",
+       "text": "驾驶 2010 捷豹 C-X75 完成 2次 公路赛"
+      },
+      {
+       "name": "挑战四",
+       "text": "驾驶 2010 捷豹 C-X75 在 任意车友会 停车"
+      }
+     ],
+     "level": "硬性指定车型"
+    }
+   ]
+  },
+  {
+   "title": "系列赛5 英国汽车 秋季",
+   "date": "9月17日 至 9月24日",
+   "hdr": 73,
+   "events": [
+    {
+     "type": "照片挑战",
+     "name": "#乡野之莲",
+     "car": "在 白川乡 拍摄一张任意 莲花 车辆照片",
+     "note": "在 白川乡 拍摄一张任意 莲花 车辆照片",
+     "tuner": "",
+     "code": "",
+     "reward": "汽车喇叭 - 盗贼之海",
+     "subs": [],
+     "level": "品牌/条件限定"
+    },
+    {
+     "type": "收藏品",
+     "name": "轮胎狩猎",
+     "car": "在 霜山环道 破坏 15个 漂移轮胎吉祥物",
+     "note": "在 霜山环道 破坏 15个 漂移轮胎吉祥物",
+     "tuner": "",
+     "code": "",
+     "reward": "100,000点数",
+     "subs": [],
+     "level": "无车辆限制"
+    },
+    {
+     "type": "终极考验",
+     "name": "超级环道",
+     "car": "2020 雪佛兰 Corvette Stingray Coupe",
+     "note": "车展购入 调校师: Noa Miyako 调校代码: 901378277",
+     "tuner": "Noa Miyako",
+     "code": "901378277",
+     "reward": "迈凯伦 765 '21",
+     "subs": [],
+     "level": "类别限定"
+    },
+    {
+     "type": "季节锦标赛",
+     "name": "越野攀爬",
+     "car": "2013 MINI X-RAID All4 Racing Countryman",
+     "note": "车展购入 调校师: MSR Ane3tr 调校代码: 119450482",
+     "tuner": "MSR Ane3tr",
+     "code": "119450482",
+     "reward": "MINI X-Raid",
+     "subs": [],
+     "level": "类别限定"
+    },
+    {
+     "type": "季节锦标赛",
+     "name": "玩具上路",
+     "car": "2008 道奇 Viper SRT-10 ACR",
+     "note": "车展购入 调校师: MSR Sam 调校代码: 154739768",
+     "tuner": "MSR Sam",
+     "code": "154739768",
+     "reward": "莲花 Elise '99",
+     "subs": [],
+     "level": "类别限定"
+    },
+    {
+     "type": "测速照相",
+     "name": "湖畔山谷",
+     "car": "2015 迈凯伦 570S Coupe",
+     "note": "车展购入 调校师：MSR Mian 调校代码: 716568156",
+     "tuner": "MSR Mian",
+     "code": "716568156",
+     "reward": "抽奖",
+     "subs": [],
+     "level": "推荐用车"
+    },
+    {
+     "type": "测速区间",
+     "name": "海洋高速公路",
+     "car": "2015 迈凯伦 570S Coupe",
+     "note": "车展购入 调校师：MSR Mian 调校代码: 716568156",
+     "tuner": "MSR Mian",
+     "code": "716568156",
+     "reward": "抽奖",
+     "subs": [],
+     "level": "推荐用车"
+    },
+    {
+     "type": "漂移区域",
+     "name": "市内竞速",
+     "car": "1965 MINI Cooper S",
+     "note": "车展购入 调校师: Noa Miyako 调校代码: 371151140",
+     "tuner": "Noa Miyako",
+     "code": "371151140",
+     "reward": "抽奖",
+     "subs": [],
+     "level": "推荐用车"
+    },
+    {
+     "type": "地平线漂移",
+     "name": "漂移大师",
+     "car": "在 地平线漂移赛 达成 5次 LINK 漂移技术",
+     "note": "在 地平线漂移赛 达成 5次 LINK漂移技术",
+     "tuner": "",
+     "code": "",
+     "reward": "阿斯顿马丁 DBX",
+     "subs": [],
+     "level": "无车辆限制"
+    },
+    {
+     "type": "捉迷藏",
+     "name": "5 对 1",
+     "car": "完成一次 捉迷藏 游戏",
+     "note": "完成一次 捉迷藏 游戏",
+     "tuner": "",
+     "code": "",
+     "reward": "服装 - 经典夹克",
+     "subs": [],
+     "level": "无车辆限制"
+    },
+    {
+     "type": "地平线特技派对",
+     "name": "迷你游戏",
+     "car": "完成任意 地平线特技派对",
+     "note": "完成任意 地平线特技派对",
+     "tuner": "",
+     "code": "",
+     "reward": "Link - 渐强欧陆节拍",
+     "subs": [],
+     "level": "无车辆限制"
+    },
+    {
+     "type": "每月劲敌",
+     "name": "霜山冲刺赛",
+     "car": "完成一圈干净圈",
+     "note": "干净圈要求 无碰撞 无倒转 无自动驾驶",
+     "tuner": "",
+     "code": "",
+     "reward": "超级抽奖",
+     "subs": [],
+     "level": "无车辆限制"
+    },
+    {
+     "type": "每日挑战",
+     "name": "漂移区域",
+     "car": "在 漂移区域 获得至少 1星",
+     "note": "在 漂移区域 获得至少 1星",
+     "tuner": "",
+     "code": "",
+     "reward": "5,000点数",
+     "subs": [
+      {
+       "name": "休闲小零食",
+       "text": "通过破坏 自动售货机 达成 一次 休闲小零食技术"
+      },
+      {
+       "name": "LINK 空中飞车技术",
+       "text": "达成 3次 LINK 空中飞车技术"
+      },
+      {
+       "name": "危险标志",
+       "text": "在 危险标志 获得"
+      },
+      {
+       "name": "干净利落跑法技术",
+       "text": "达成 3次 干净利落跑法 技术"
+      },
+      {
+       "name": "礼物箱",
+       "text": "向其他玩家发送一个礼物箱"
+      },
+      {
+       "name": "公路赛",
+       "text": "完成 一场 公路赛"
+      }
+     ],
+     "level": "无车辆限制"
+    },
+    {
+     "type": "每周挑战",
+     "name": "挑战一",
+     "car": "拥有并驾驶 1999 莲花 Elise Series 1 Sport 190",
+     "note": "车展购入 调校师: Noa Miyako 调校代码: 170698857",
+     "tuner": "Noa Miyako",
+     "code": "170698857",
+     "reward": "25,000点数",
+     "subs": [
+      {
+       "name": "挑战二",
+       "text": "驾驶 1999 莲花 Elise Series 1 Sport 190 在 测速照相 获得 6星"
+      },
+      {
+       "name": "挑战三",
+       "text": "驾驶 1999 莲花 Elise Series 1 Sport 190 达成 4次 极速技术"
+      },
+      {
+       "name": "挑战四",
+       "text": "驾驶 1999 莲花 Elise Series 1 Sport 190 在 霜山漂移冲分赛环道 完成 3圈"
+      }
+     ],
+     "level": "硬性指定车型"
+    }
+   ]
+  },
+  {
+   "title": "系列赛5 英国汽车 夏季",
+   "date": "9月10日 至 9月17日",
+   "hdr": 134,
+   "events": [
+    {
+     "type": "照片挑战",
+     "name": "捷豹快照",
+     "car": "在 霜山环道赛道 拍摄一张任意 捷豹 汽车的照片",
+     "note": "在 霜山环道赛道 拍摄一张任意 捷豹 汽车的照片",
+     "tuner": "",
+     "code": "",
+     "reward": "服装 - 复古赛车服",
+     "subs": [],
+     "level": "品牌/条件限定"
+    },
+    {
+     "type": "寻宝游戏",
+     "name": "伊东区",
+     "car": "伊东中部",
+     "note": "伊东中部 森林直道 与 过山车飞跃 之间的 铁道口旁",
+     "tuner": "",
+     "code": "",
+     "reward": "100,000点数",
+     "subs": [],
+     "level": "无车辆限制"
+    },
+    {
+     "type": "终极考验",
+     "name": "小径纵横",
+     "car": "1991 GMC Syclone",
+     "note": "车展购入 调校师: Noa Miyako 调校代码: 180470674",
+     "tuner": "Noa Miyako",
+     "code": "180470674",
+     "reward": "Noble M600",
+     "subs": [],
+     "level": "类别限定"
+    },
+    {
+     "type": "季节锦标赛",
+     "name": "田园夏目",
+     "car": "2004 保时捷 911 GT3",
+     "note": "车展购入 调校师：MSR Sola 调校代码：928857060",
+     "tuner": "MSR Sola",
+     "code": "928857060",
+     "reward": "捷豹 XJR-15",
+     "subs": [],
+     "level": "类别限定"
+    },
+    {
+     "type": "季节锦标赛",
+     "name": "越野英豪",
+     "car": "2025 丰田 Land Cruiser",
+     "note": "车展购入 调校师: CaiGou YYY 调教代码：177892394",
+     "tuner": "CaiGou YYY",
+     "code": "177892394",
+     "reward": "路虎 Defender 110 X",
+     "subs": [],
+     "level": "类别限定"
+    },
+    {
+     "type": "漂移冲分赛",
+     "name": "霜山漂移冲分赛",
+     "car": "2024 日产 GT-R Nismo",
+     "note": "车展购入 调校师：MSR Sola 调校代码：172565463",
+     "tuner": "MSR Sola",
+     "code": "172565463",
+     "reward": "抽奖",
+     "subs": [],
+     "level": "推荐用车"
+    },
+    {
+     "type": "危险标志",
+     "name": "色川发射",
+     "car": "2015 路虎 Range Rover Sport SVR",
+     "note": "车展购入 调校师: CaiGou YYY 调校代码: 147502440",
+     "tuner": "CaiGou YYY",
+     "code": "147502440",
+     "reward": "抽奖",
+     "subs": [],
+     "level": "推荐用车"
+    },
+    {
+     "type": "测速照相",
+     "name": "河畔",
+     "car": "2011 迈凯伦 12C Coupe",
+     "note": "车展购入 调校师: Noa Miyako 调校代码: 738893188",
+     "tuner": "Noa Miyako",
+     "code": "738893188",
+     "reward": "抽奖",
+     "subs": [],
+     "level": "推荐用车"
+    },
+    {
+     "type": "拓荒者门",
+     "name": "小太刀下坡",
+     "car": "2015 路虎 Range Rover Sport SVR",
+     "note": "车展购入 调校师: CaiGou YYY 调校代码: 661741399",
+     "tuner": "CaiGou YYY",
+     "code": "661741399",
+     "reward": "抽奖",
+     "subs": [],
+     "level": "推荐用车"
+    },
+    {
+     "type": "季节打工",
+     "name": "东京送餐",
+     "car": "完成一整次东京送餐轮班",
+     "note": "完成一整次东京送餐轮班",
+     "tuner": "",
+     "code": "",
+     "reward": "Link - 行动！！！",
+     "subs": [],
+     "level": "无车辆限制"
+    },
+    {
+     "type": "地平线特技派对",
+     "name": "迷你游戏",
+     "car": "完成任意 地平线特技派对",
+     "note": "完成任意 地平线特技派对",
+     "tuner": "",
+     "code": "",
+     "reward": "表情 - 机器人",
+     "subs": [],
+     "level": "无车辆限制"
+    },
+    {
+     "type": "每月劲敌",
+     "name": "霜山冲刺赛",
+     "car": "完成一圈干净圈",
+     "note": "干净圈要求 无碰撞 无倒转 无自动驾驶",
+     "tuner": "",
+     "code": "",
+     "reward": "超级抽奖",
+     "subs": [],
+     "level": "无车辆限制"
+    },
+    {
+     "type": "每日挑战",
+     "name": "漂移冲分",
+     "car": "在 霜山漂移冲分赛 中完成 1圈 ",
+     "note": "在 霜山漂移冲分赛 中完成 1 圈 ",
+     "tuner": "",
+     "code": "",
+     "reward": "5,000点数",
+     "subs": [
+      {
+       "name": "测速区间",
+       "text": "在任意 测速区间 获得至少 1星"
+      },
+      {
+       "name": "泥地竞速赛",
+       "text": "完成任意 1场 泥地竞速赛 "
+      },
+      {
+       "name": "破坏技术",
+       "text": "驾驶任意车辆达成 3次 破坏技术"
+      },
+      {
+       "name": "车友会",
+       "text": "驾驶任意车辆在任意 车友会 停车"
+      },
+      {
+       "name": "劲敌",
+       "text": "使用任意等级的车辆在 劲敌 击败幽灵车"
+      },
+      {
+       "name": "漂移技术",
+       "text": "驾驶任意车辆达成 3次 漂移技术或手刹漂移技术"
+      }
+     ],
+     "level": "无车辆限制"
+    },
+    {
+     "type": "每周挑战",
+     "name": "挑战一",
+     "car": "拥有并驾驶 2020 路虎 Defender 110 X",
+     "note": "车展购入 调校师: Noa Miyako 调校代码: 124594876",
+     "tuner": "Noa Miyako",
+     "code": "124594876",
+     "reward": "25,000点数",
+     "subs": [
+      {
+       "name": "挑战二",
+       "text": "驾驶 2020 路虎 Defender 110 X 在 危险标志 累积获得 4星"
+      },
+      {
+       "name": "挑战三",
+       "text": "驾驶 2020 路虎 Defender 110 X 达成 3次 杰出破坏技术"
+      },
+      {
+       "name": "挑战四",
+       "text": "在 霜山漂移赛道 拍摄一张 2020 路虎 Defender 110 X 照片"
+      }
+     ],
+     "level": "硬性指定车型"
+    }
+   ]
+  },
+  {
+   "title": "系列赛4 地平线吉祥物派对 春季",
+   "date": "9月3日 至 9月10日",
+   "hdr": 195,
+   "events": [
+    {
+     "type": "照片挑战",
+     "name": "#豆在荚中",
+     "car": "在 吉祥物派对 南野吉祥物 拍摄一张照片",
+     "note": "在 吉祥物派对 南野吉祥物 拍摄一张照片",
+     "tuner": "",
+     "code": "",
+     "reward": "表情奖励",
+     "subs": [],
+     "level": "品牌/条件限定"
+    },
+    {
+     "type": "寻宝游戏",
+     "name": "东京区",
+     "car": "在 东京塔 附近",
+     "note": "在 东京塔 附近",
+     "tuner": "",
+     "code": "",
+     "reward": "100,000点数",
+     "subs": [],
+     "level": "无车辆限制"
+    },
+    {
+     "type": "终极考验",
+     "name": "春季大扫除",
+     "car": "1986 奥迪 #2 Sport quattro S1",
+     "note": "车展购入 调校师：FuzzyTexas81292  调校代码: 807427629",
+     "tuner": "FuzzyTexas81292",
+     "code": "807427629",
+     "reward": "MINI X-Raid",
+     "subs": [],
+     "level": "类别限定"
+    },
+    {
+     "type": "季节锦标赛",
+     "name": "无限伙伴",
+     "car": "2020 Jimco #179 Hammerhead Class 1",
+     "note": "车展购入 调校师：Noa Miyako 调校代码：137264825",
+     "tuner": "Noa Miyako",
+     "code": "137264825",
+     "reward": "马自达 RX-3",
+     "subs": [],
+     "level": "类别限定"
+    },
+    {
+     "type": "季节锦标赛",
+     "name": "高性能掀背车追逐者",
+     "car": "2010 雷诺 Megane RS 250",
+     "note": "车展购入 调校师: MSR Sam 调校代码: 468517467",
+     "tuner": "MSR Sam",
+     "code": "468517467",
+     "reward": "本田 e '22",
+     "subs": [],
+     "level": "类别限定"
+    },
+    {
+     "type": "计时赛",
+     "name": "毛豆计时赛",
+     "car": "2013 梅赛德斯-奔驰 A 45 AMG",
+     "note": "车展购入 调校师: Noa Miyako 调校代码: 277088342",
+     "tuner": "Noa Miyako",
+     "code": "277088342",
+     "reward": "抽奖",
+     "subs": [],
+     "level": "推荐用车"
+    },
+    {
+     "type": "测速照相",
+     "name": "伊东直道",
+     "car": "2020 日产 GT-R Nismo (R35)",
+     "note": "车展购入 调校师：MSR Sola 调校代码：745053186",
+     "tuner": "MSR Sola",
+     "code": "745053186",
+     "reward": "抽奖",
+     "subs": [],
+     "level": "推荐用车"
+    },
+    {
+     "type": "漂移区域",
+     "name": "滨海径道赛",
+     "car": "2024 日产 GT-R Nismo",
+     "note": "车展购入 调校师：MSR Sola 调校代码：172565463",
+     "tuner": "MSR Sola",
+     "code": "172565463",
+     "reward": "抽奖",
+     "subs": [],
+     "level": "推荐用车"
+    },
+    {
+     "type": "地平线乐玩",
+     "name": "龙道新星",
+     "car": "完成一场 地平线竞速锦标赛",
+     "note": "完成一场 地平线竞速锦标赛",
+     "tuner": "",
+     "code": "",
+     "reward": "汽车喇叭",
+     "subs": [],
+     "level": "无车辆限制"
+    },
+    {
+     "type": "淘汰之王",
+     "name": "大逃杀",
+     "car": "结束时取得第30名次或以上",
+     "note": "结束时取得第30名次或以上",
+     "tuner": "",
+     "code": "",
+     "reward": "3000 MKIII",
+     "subs": [],
+     "level": "无车辆限制"
+    },
+    {
+     "type": "地平线特技派对",
+     "name": "迷你游戏",
+     "car": "完成任意 地平线特技派对",
+     "note": "完成任意 地平线特技派对",
+     "tuner": "",
+     "code": "",
+     "reward": "服装奖励",
+     "subs": [],
+     "level": "无车辆限制"
+    },
+    {
+     "type": "每月劲敌",
+     "name": "毛豆环道",
+     "car": "完成一圈干净圈",
+     "note": "干净圈要求 无碰撞 无倒转 无自动驾驶",
+     "tuner": "",
+     "code": "",
+     "reward": "超级抽奖",
+     "subs": [],
+     "level": "无车辆限制"
+    },
+    {
+     "type": "每日挑战",
+     "name": "漂移技术",
+     "car": "达成3次漂移技术或手刹漂移技术",
+     "note": "达成3次漂移技术或手刹漂移技术",
+     "tuner": "",
+     "code": "",
+     "reward": "5,000点数",
+     "subs": [
+      {
+       "name": "升级",
+       "text": "花费 15000 点数对任意车辆进行并级"
+      },
+      {
+       "name": "测速区间",
+       "text": "在测速区间获得至少 1星"
+      },
+      {
+       "name": "抽奖",
+       "text": "兑换一次抽奖或者超级抽奖"
+      },
+      {
+       "name": "改装车",
+       "text": "购买一辆改装车"
+      },
+      {
+       "name": "驾驶",
+       "text": "行驶 16.1千米"
+      },
+      {
+       "name": "特技派对",
+       "text": "完成地平线特技派对的 第3回合"
+      }
+     ],
+     "level": "无车辆限制"
+    },
+    {
+     "type": "每周挑战",
+     "name": "挑战一",
+     "car": "拥有并驾驶 2022 本田 e",
+     "note": "车展购入 调校师: Noa Miyako 调校代码: 582205747",
+     "tuner": "Noa Miyako",
+     "code": "582205747",
+     "reward": "25,000点数",
+     "subs": [
+      {
+       "name": "挑战二",
+       "text": "为 2022 本田 e 喷漆"
+      },
+      {
+       "name": "挑战三",
+       "text": "在 毛豆环道 拍摄一张你的 2022 本田 e 的照片"
+      },
+      {
+       "name": "挑战四",
+       "text": "驾驶你的 2022 本田 e 在 大黑车友会 停车"
+      }
+     ],
+     "level": "硬性指定车型"
+    }
+   ]
+  },
+  {
+   "title": "系列赛4 地平线吉祥物派对 冬季",
+   "date": "8月27日 至 9月3日",
+   "hdr": 256,
+   "events": [
+    {
+     "type": "照片挑战",
+     "name": "#狂热经典",
+     "car": "在 毛豆计时赛道 拍摄任意一张类型为 小众神车 照片",
+     "note": "在 毛豆计时赛道 拍摄任意一张类型为 小众神车 照片",
+     "tuner": "",
+     "code": "",
+     "reward": "汽车喇叭",
+     "subs": [],
+     "level": "品牌/条件限定"
+    },
+    {
+     "type": "寻宝游戏",
+     "name": "大谷区",
+     "car": "大谷区 测速区间 附近",
+     "note": "大谷区 测速区间 附近",
+     "tuner": "",
+     "code": "",
+     "reward": "100,000点数",
+     "subs": [],
+     "level": "无车辆限制"
+    },
+    {
+     "type": "终极考验",
+     "name": "追梦人",
+     "car": "2011 奥迪 RS5 Coupe",
+     "note": "车展购入 调校师：MSR Sola 调校代码：310012045",
+     "tuner": "MSR Sola",
+     "code": "310012045",
+     "reward": "N Vision 74 '22",
+     "subs": [],
+     "level": "类别限定"
+    },
+    {
+     "type": "季节锦标赛",
+     "name": "微型环道赛",
+     "car": "2021 SIERRA Cars RX3",
+     "note": "车展购入 调校师: Noa Miyako 调校代码: 653681805",
+     "tuner": "Noa Miyako",
+     "code": "653681805",
+     "reward": "梅赛德斯-奔驰 Unimog",
+     "subs": [],
+     "level": "类别限定"
+    },
+    {
+     "type": "季节锦标赛",
+     "name": "现代奇迹",
+     "car": "2005 斯巴鲁 IMPREZA WRX STI",
+     "note": "车展购入 调校师: CaiGou YYY 调校代码: 397447672",
+     "tuner": "CaiGou YYY",
+     "code": "397447672",
+     "reward": "Autozam AZ-1 '93",
+     "subs": [],
+     "level": "类别限定"
+    },
+    {
+     "type": "计时赛",
+     "name": "毛豆计时赛",
+     "car": "1973 宝马 2002 Turbo",
+     "note": "车展购入 调校师: Noa Miyako 调校代码: 180330651",
+     "tuner": "Noa Miyako",
+     "code": "180330651",
+     "reward": "抽奖",
+     "subs": [],
+     "level": "推荐用车"
+    },
+    {
+     "type": "危险标志",
+     "name": "白川乡",
+     "car": "1991 本田 Beat",
+     "note": "车展购入 调校师:CaiGou YYY 调校代码:311556564",
+     "tuner": "CaiGou YYY",
+     "code": "311556564",
+     "reward": "抽奖",
+     "subs": [],
+     "level": "推荐用车"
+    },
+    {
+     "type": "测速照相",
+     "name": "高地公路",
+     "car": "1991 本田 Beat",
+     "note": "车展购入 调校师:CaiGou YYY 调校代码:311556564",
+     "tuner": "CaiGou YYY",
+     "code": "311556564",
+     "reward": "抽奖",
+     "subs": [],
+     "level": "推荐用车"
+    },
+    {
+     "type": "测速区间",
+     "name": "六见弯路",
+     "car": "1991 本田 Beat",
+     "note": "车展购入 调校师:CaiGou YYY 调校代码:311556564",
+     "tuner": "CaiGou YYY",
+     "code": "311556564",
+     "reward": "抽奖",
+     "subs": [],
+     "level": "推荐用车"
+    },
+    {
+     "type": "地平线漂移",
+     "name": "串联漂移",
+     "car": "在 地平线漂移赛 达成 3次 LINK漂移技术",
+     "note": "在 地平线漂移赛 达成 3次 LINK漂移技术",
+     "tuner": "",
+     "code": "",
+     "reward": "Meyers Manx 2.0",
+     "subs": [],
+     "level": "无车辆限制"
+    },
+    {
+     "type": "地平线特技派对",
+     "name": "迷你游戏",
+     "car": "完成任意 地平线特技派对",
+     "note": "完成任意 地平线特技派对",
+     "tuner": "",
+     "code": "",
+     "reward": "极限竞速LINK奖励",
+     "subs": [],
+     "level": "无车辆限制"
+    },
+    {
+     "type": "每月劲敌",
+     "name": "毛豆环道",
+     "car": "完成一圈干净圈",
+     "note": "干净圈要求 无碰撞 无倒转 无自动驾驶",
+     "tuner": "",
+     "code": "",
+     "reward": "超级抽奖",
+     "subs": [],
+     "level": "无车辆限制"
+    },
+    {
+     "type": "每日挑战",
+     "name": "试驾",
+     "car": "试驾任意改装车或追加销售车",
+     "note": "试驾任意改装车或追加销售车",
+     "tuner": "",
+     "code": "",
+     "reward": "5,000点数",
+     "subs": [
+      {
+       "name": "休闲小食技术",
+       "text": "通过破坏自动售货机达成一次休闲小食技术"
+      },
+      {
+       "name": "计时赛",
+       "text": "在任意计时赛赛道完成3圈"
+      },
+      {
+       "name": "泥地竞速赛",
+       "text": "完成一场泥地竞速赛"
+      },
+      {
+       "name": "直线车友赛",
+       "text": "完成任意直线车友赛"
+      },
+      {
+       "name": "车友会",
+       "text": "在任意车友会停车"
+      },
+      {
+       "name": "地平线故事",
+       "text": "在任意地平线故事中获得至少 1星"
+      }
+     ],
+     "level": "无车辆限制"
+    },
+    {
+     "type": "每周挑战",
+     "name": "挑战一",
+     "car": "拥有并驾驶 1993 Autozam AZ-1",
+     "note": "车展购入 调校师: Noa Miyako 调校代码: 403752226",
+     "tuner": "Noa Miyako",
+     "code": "403752226",
+     "reward": "25,000点数",
+     "subs": [
+      {
+       "name": "挑战二",
+       "text": "花费 25000 点数升级 1993 Autozam AZ-1"
+      },
+      {
+       "name": "挑战三",
+       "text": "驾驶 1993 Autozam AZ-1 维持 193千米/时 或更高的车速 10秒"
+      },
+      {
+       "name": "挑战四",
+       "text": "驾驶 1993 Autozam AZ-1 赢得任意山道竞速"
+      }
+     ],
+     "level": "硬性指定车型"
+    }
+   ]
+  },
+  {
+   "title": "系列赛4 地平线吉祥物派对 秋季",
+   "date": "8月20日 至 8月27日",
+   "hdr": 317,
+   "events": [
+    {
+     "type": "照片挑战",
+     "name": "#美味团子",
+     "car": "在 吉祥物派对东京团子 拍摄 角色 照片",
+     "note": "在 吉祥物派对东京团子 拍摄 角色 照片",
+     "tuner": "",
+     "code": "",
+     "reward": "服装奖励",
+     "subs": [],
+     "level": "品牌/条件限定"
+    },
+    {
+     "type": "收藏品",
+     "name": "全垒打",
+     "car": "在 地平线体育场 破坏15个 霜山吉祥物",
+     "note": "在 地平线体育场 破坏15个 霜山吉祥物",
+     "tuner": "",
+     "code": "",
+     "reward": "超级抽奖",
+     "subs": [],
+     "level": "无车辆限制"
+    },
+    {
+     "type": "终极考验",
+     "name": "游园会",
+     "car": "2019 日产 370Z Nismo",
+     "note": "车展购入 调校师：MSR Sola 调校代码：443457088",
+     "tuner": "MSR Sola",
+     "code": "443457088",
+     "reward": "Fairlady Z '69",
+     "subs": [],
+     "level": "类别限定"
+    },
+    {
+     "type": "季节锦标赛",
+     "name": "全轮制霸",
+     "car": "1972 雪佛兰 K-10 Custom",
+     "note": "车展购入 调校师: Noa Miyako 调校代码：167116779",
+     "tuner": "Noa Miyako",
+     "code": "167116779",
+     "reward": "#179 Hammerhead",
+     "subs": [],
+     "level": "类别限定"
+    },
+    {
+     "type": "季节锦标赛",
+     "name": "美景之夜",
+     "car": "2007 本田 Civic Type R",
+     "note": "车展购入 调校师：MSR Ane3tr 调校代码：166736264",
+     "tuner": "MSR Ane3tr",
+     "code": "166736264",
+     "reward": "现代 i20 N",
+     "subs": [],
+     "level": "类别限定"
+    },
+    {
+     "type": "测速区间",
+     "name": "岗山竞速",
+     "car": "霜山漂移冲分赛",
+     "note": "车展购入 调校师：MSR Mian 调校代码：943821745",
+     "tuner": "MSR Mian",
+     "code": "943821745",
+     "reward": "抽奖",
+     "subs": [],
+     "level": "无车辆限制"
+    },
+    {
+     "type": "测速区间",
+     "name": "嘉年华环线",
+     "car": "2021 北极星 RZR Pro XP Factory Racing\nLimited Edition",
+     "note": "车展购入 调校师：MSR Mian 调校代码：943821745",
+     "tuner": "MSR Mian",
+     "code": "943821745",
+     "reward": "抽奖",
+     "subs": [],
+     "level": "推荐用车"
+    },
+    {
+     "type": "拓荒者门",
+     "name": "势均力敌",
+     "car": "2021 北极星 RZR Pro XP Factory Racing\nLimited Edition",
+     "note": "车展购入 调校师：MSR Mian 调校代码：943821745",
+     "tuner": "MSR Mian",
+     "code": "943821745",
+     "reward": "抽奖",
+     "subs": [],
+     "level": "推荐用车"
+    },
+    {
+     "type": "地平线乐玩",
+     "name": "一尘不染",
+     "car": "在 规格赛 达成3次 LINK 干净利落起步技术",
+     "note": "在 规格赛 达成3次 LINK 干净利落起步技术",
+     "tuner": "",
+     "code": "",
+     "reward": "MX-5 Cup '17",
+     "subs": [],
+     "level": "无车辆限制"
+    },
+    {
+     "type": "捉迷藏",
+     "name": "5 对 1",
+     "car": "完成一次 捉迷藏 游戏",
+     "note": "完成一次 捉迷藏 游戏",
+     "tuner": "",
+     "code": "",
+     "reward": "极限竞速LINK奖励",
+     "subs": [],
+     "level": "无车辆限制"
+    },
+    {
+     "type": "地平线特技派对",
+     "name": "迷你游戏",
+     "car": "完成任意 地平线特技派对",
+     "note": "完成任意 地平线特技派对",
+     "tuner": "",
+     "code": "",
+     "reward": "服装奖励",
+     "subs": [],
+     "level": "无车辆限制"
+    },
+    {
+     "type": "每月劲敌",
+     "name": "毛豆环道",
+     "car": "完成一圈干净圈",
+     "note": "干净圈要求 无碰撞 无倒转 无自动驾驶",
+     "tuner": "",
+     "code": "",
+     "reward": "超级抽奖",
+     "subs": [],
+     "level": "无车辆限制"
+    },
+    {
+     "type": "每日挑战",
+     "name": "礼物箱",
+     "car": "向其他玩家发送一个礼物箱",
+     "note": "向其他玩家发送一个礼物箱",
+     "tuner": "",
+     "code": "",
+     "reward": "5,000点数",
+     "subs": [
+      {
+       "name": "计时赛",
+       "text": "在任意计时赛赛道完成 3圈"
+      },
+      {
+       "name": "连续技术",
+       "text": "结算 10000 连续技术分"
+      },
+      {
+       "name": "越野赛",
+       "text": "完成一场 越野赛"
+      },
+      {
+       "name": "破坏技术",
+       "text": "达成 3次 破坏 技术"
+      },
+      {
+       "name": "危险标志",
+       "text": "在 危险标志 获得至少 1星"
+      },
+      {
+       "name": "极速技术",
+       "text": "达成 3次 极速 技术"
+      }
+     ],
+     "level": "无车辆限制"
+    },
+    {
+     "type": "每周挑战",
+     "name": "挑战一",
+     "car": "拥有并驾驶 2021 现代 i20 N",
+     "note": "车展购入 调校师: Noa Miyako 调校代码: 108224347",
+     "tuner": "Noa Miyako",
+     "code": "108224347",
+     "reward": "25,000点数",
+     "subs": [
+      {
+       "name": "挑战二",
+       "text": "驾驶 2021 现代 i20 N 达成4次 极速 技术"
+      },
+      {
+       "name": "挑战三",
+       "text": "驾驶 2021 现代 i20 N 赢得任意 街头赛"
+      },
+      {
+       "name": "挑战四",
+       "text": "驾驶 2021 现代 i20 N 在 毛豆计时赛 完成3圈"
+      }
+     ],
+     "level": "硬性指定车型"
+    }
+   ]
+  },
+  {
+   "title": "系列赛4 地平线吉祥物派对 夏季",
+   "date": "8月13日 至 8月20日",
+   "hdr": 378,
+   "events": [
+    {
+     "type": "照片挑战",
+     "name": "阳光快照",
+     "car": "在 北龙町向日葵农场 拍摄 五菱宏光S",
+     "note": "在 北龙町向日葵农场 拍摄 五菱宏光S",
+     "tuner": "",
+     "code": "",
+     "reward": "服装奖励",
+     "subs": [],
+     "level": "品牌/条件限定"
+    },
+    {
+     "type": "寻宝游戏",
+     "name": "霜山区",
+     "car": "鸟野山",
+     "note": "鸟野山 附近",
+     "tuner": "",
+     "code": "",
+     "reward": "100,000点数",
+     "subs": [],
+     "level": "无车辆限制"
+    },
+    {
+     "type": "终极考验",
+     "name": "越野攀爬赛",
+     "car": "1991 GMC Syclone",
+     "note": "车展购入 调校师: Noa Miyako 调校代码: 180470674",
+     "tuner": "Noa Miyako",
+     "code": "180470674",
+     "reward": "雪佛兰 Corvette '53",
+     "subs": [],
+     "level": "类别限定"
+    },
+    {
+     "type": "季节锦标赛",
+     "name": "小而强大",
+     "car": "1991 本田 Beat",
+     "note": "车展购入 调校师:CaiGou YYY 调校代码:311556564",
+     "tuner": "CaiGou YYY",
+     "code": "311556564",
+     "reward": "本田 S800",
+     "subs": [],
+     "level": "类别限定"
+    },
+    {
+     "type": "季节锦标赛",
+     "name": "团子冲刺",
+     "car": "2014 兰博基尼 Huracan LP 610-4",
+     "note": "车展购入 调校师:CaiGou YYY 调校代码:471520069",
+     "tuner": "CaiGou YYY",
+     "code": "471520069",
+     "reward": "宝马 Isetta '57",
+     "subs": [],
+     "level": "类别限定"
+    },
+    {
+     "type": "计时赛",
+     "name": "毛豆计时赛",
+     "car": "1991 本田 Beat",
+     "note": "车展购入 调校师:CaiGou YYY 调校代码:311556564",
+     "tuner": "CaiGou YYY",
+     "code": "311556564",
+     "reward": "抽奖",
+     "subs": [],
+     "level": "推荐用车"
+    },
+    {
+     "type": "危险标志",
+     "name": "稻田发射",
+     "car": "1985 丰田 Sprinter Trueno GT Apex",
+     "note": "车展购入 调校师：MSR Sam 调校代码：649358159",
+     "tuner": "MSR Sam",
+     "code": "649358159",
+     "reward": "抽奖",
+     "subs": [],
+     "level": "推荐用车"
+    },
+    {
+     "type": "测速区间",
+     "name": "箱根弯道",
+     "car": "1985 丰田 Sprinter Trueno GT Apex",
+     "note": "车展购入 调校师：MSR Sam 调校代码：649358159",
+     "tuner": "MSR Sam",
+     "code": "649358159",
+     "reward": "抽奖",
+     "subs": [],
+     "level": "推荐用车"
+    },
+    {
+     "type": "漂移区域",
+     "name": "河津七泷螺旋桥",
+     "car": "1985 丰田 Sprinter Trueno GT Apex",
+     "note": "车展购入 调校师：Noa Seako调校代码：968556299",
+     "tuner": "Noa Seako",
+     "code": "968556299",
+     "reward": "抽奖",
+     "subs": [],
+     "level": "推荐用车"
+    },
+    {
+     "type": "季节打工",
+     "name": "东京送餐",
+     "car": "完成一轮班次东京送餐打工",
+     "note": "完成3次送餐为一轮班次",
+     "tuner": "",
+     "code": "",
+     "reward": "丰田 JPN Taxi",
+     "subs": [],
+     "level": "无车辆限制"
+    },
+    {
+     "type": "地平线特技派对",
+     "name": "迷你游戏",
+     "car": "完成任意 地平线特技派对",
+     "note": "完成任意 地平线特技派对",
+     "tuner": "",
+     "code": "",
+     "reward": "汽车喇叭",
+     "subs": [],
+     "level": "无车辆限制"
+    },
+    {
+     "type": "每月劲敌",
+     "name": "毛豆环道",
+     "car": "完成一圈干净圈",
+     "note": "干净圈要求 无碰撞 无倒转 无自动驾驶",
+     "tuner": "",
+     "code": "",
+     "reward": "超级抽奖",
+     "subs": [],
+     "level": "无车辆限制"
+    },
+    {
+     "type": "每日挑战",
+     "name": "特技派对",
+     "car": "完成任意 地平线特技派对 第3回合",
+     "note": "完成任意 地平线特技派对 第3回合",
+     "tuner": "",
+     "code": "",
+     "reward": "5,000点数",
+     "subs": [
+      {
+       "name": "劲敌",
+       "text": "驾驶任意车辆在 劲敌 击败劲敌幽灵车"
+      },
+      {
+       "name": "空中飞车技术",
+       "text": "驾驶任意车辆达成 3次 空中飞车技术"
+      },
+      {
+       "name": "计时赛",
+       "text": "驾驶任意车辆在 任意计时赛 完成3星"
+      },
+      {
+       "name": "测速照相",
+       "text": "驾驶任意车辆在 测速照相 获得1星"
+      },
+      {
+       "name": "车友会",
+       "text": "驾驶任意车辆在 任意车友会 停车"
+      },
+      {
+       "name": "公路赛",
+       "text": "驾驶任意车辆完成一场 公路竞速赛"
+      }
+     ],
+     "level": "无车辆限制"
+    },
+    {
+     "type": "每周挑战",
+     "name": "挑战一",
+     "car": "拥有并驾驶 2017 丰田 JPN Taxi",
+     "note": "车展购入 调校师: Noa Miyako 调校代码: 900097217",
+     "tuner": "Noa Miyako",
+     "code": "900097217",
+     "reward": "25,000点数",
+     "subs": [
+      {
+       "name": "挑战二",
+       "text": "驾驶 2017 丰田 JPN Taxi 积累达成 3次 休闲小食技术"
+      },
+      {
+       "name": "挑战三",
+       "text": "驾驶 2017 丰田 JPN Taxi 在任意 车友会 停车"
+      },
+      {
+       "name": "挑战四",
+       "text": "驾驶 2017 丰田 JPN Taxi 在 东京中央火车站 拍摄一张照片"
+      }
+     ],
+     "level": "硬性指定车型"
+    }
+   ]
+  },
+  {
+   "title": "系列赛3 意大利奇珍 春季",
+   "date": "8月6日 至 8月30日",
+   "hdr": 439,
+   "events": [
+    {
+     "type": "照片挑战",
+     "name": "#照片假期",
+     "car": "在 外山滑雪场 拍摄一张 兰博基尼 照片",
+     "note": "在 外山滑雪场 拍摄一张 兰博基尼 照片",
+     "tuner": "",
+     "code": "",
+     "reward": "表情奖励",
+     "subs": [],
+     "level": "品牌/条件限定"
+    },
+    {
+     "type": "寻宝游戏",
+     "name": "高城区",
+     "car": "高城西小溪",
+     "note": "高城西小溪",
+     "tuner": "",
+     "code": "",
+     "reward": "100,000点数",
+     "subs": [],
+     "level": "无车辆限制"
+    },
+    {
+     "type": "终极考验",
+     "name": "每日通勤",
+     "car": "2017 阿尔法罗密欧 Gulia Quadrifoglio",
+     "note": "车展购入 调校师:Fuzzytexas81292 调校代码:151294854",
+     "tuner": "Fuzzytexas81292",
+     "code": "151294854",
+     "reward": "SF90 Stradale",
+     "subs": [],
+     "level": "类别限定"
+    },
+    {
+     "type": "季节锦标赛",
+     "name": "脱离赛道",
+     "car": "2020雪佛兰 Silverado  LT Trail boss",
+     "note": "车展购入 调校师:Noa Seako 调校代码:110351742",
+     "tuner": "Noa Seako",
+     "code": "110351742",
+     "reward": "玛莎拉蒂 MC20",
+     "subs": [],
+     "level": "无车辆限制"
+    },
+    {
+     "type": "季节锦标赛",
+     "name": "雪上无难事",
+     "car": "2015 路虎 Range Rover Sport SVR",
+     "note": "车展购入 调校师:CaiGou YYY 调校代码:147502440",
+     "tuner": "CaiGou YYY",
+     "code": "147502440",
+     "reward": "兰博基尼 Huracan",
+     "subs": [],
+     "level": "类别限定"
+    },
+    {
+     "type": "直线车友赛",
+     "name": "嘉年华公里",
+     "car": "2014 兰博基尼Huracan LP610-4",
+     "note": "车展购入 调校师:Noa Seako 调校代码:133588347",
+     "tuner": "Noa Seako",
+     "code": "133588347",
+     "reward": "抽奖",
+     "subs": [],
+     "level": "类别限定"
+    },
+    {
+     "type": "测速照相",
+     "name": "高城大桥",
+     "car": "2009 法拉利 458 Italia",
+     "note": "车展购入 调校师: Noa Miyako 调校代码: 136682324",
+     "tuner": "Noa Miyako",
+     "code": "136682324",
+     "reward": "抽奖",
+     "subs": [],
+     "level": "推荐用车"
+    },
+    {
+     "type": "测速区间",
+     "name": "高速道路",
+     "car": "2009 法拉利 458 Italia",
+     "note": "车展购入 调校师: Noa Miyako 调校代码: 136682324",
+     "tuner": "Noa Miyako",
+     "code": "136682324",
+     "reward": "抽奖",
+     "subs": [],
+     "level": "推荐用车"
+    },
+    {
+     "type": "漂移区域",
+     "name": "糠平弯道",
+     "car": "2007 法拉利 430 Scuderia",
+     "note": "车展购入 调校师:Noa Seako 调校代码:177205770",
+     "tuner": "Noa Seako",
+     "code": "177205770",
+     "reward": "抽奖",
+     "subs": [],
+     "level": "推荐用车"
+    },
+    {
+     "type": "地平线乐玩",
+     "name": "你可合规",
+     "car": "完成一场 规格锦标赛",
+     "note": "完成一场 规格锦标赛",
+     "tuner": "",
+     "code": "",
+     "reward": "阿尔法·罗密欧 8C",
+     "subs": [],
+     "level": "无车辆限制"
+    },
+    {
+     "type": "地平线特技派对",
+     "name": "迷你游戏",
+     "car": "完成任意 地平线特技派对",
+     "note": "完成任意 地平线特技派对",
+     "tuner": "",
+     "code": "",
+     "reward": "汽车喇叭",
+     "subs": [],
+     "level": "无车辆限制"
+    },
+    {
+     "type": "每月劲敌",
+     "name": "电器街环道赛",
+     "car": "完成一圈干净圈",
+     "note": "干净圈要求 无碰撞 无倒转 无自动驾驶",
+     "tuner": "",
+     "code": "",
+     "reward": "超级抽奖",
+     "subs": [],
+     "level": "无车辆限制"
+    },
+    {
+     "type": "每日挑战",
+     "name": "所有色彩",
+     "car": "在 彩虹竞速测速照相 获得3星",
+     "note": "在 彩虹竞速测速照相 获得3星",
+     "tuner": "",
+     "code": "",
+     "reward": "5,000点数",
+     "subs": [
+      {
+       "name": "体育场风景",
+       "text": "在 地平线体育场 拍摄一张你的爱车照片"
+      },
+      {
+       "name": "雷鸟 2",
+       "text": "驾驶任意 意大利 车辆在 雷鸟漂移区域 获得2星"
+      },
+      {
+       "name": "运气如何",
+       "text": "兑换一次抽奖或超级抽奖"
+      },
+      {
+       "name": "泥浆飞溅",
+       "text": "在泥地赛中达成5次任意等级的空中飞车技术"
+      },
+      {
+       "name": "掌控全局",
+       "text": "驾驶任意兰博基尼达成一次杰出连续技术"
+      },
+      {
+       "name": "购物之旅",
+       "text": "驾驶任意车辆在 公路环道赛 取得胜利"
+      }
+     ],
+     "level": "无车辆限制"
+    },
+    {
+     "type": "每周挑战",
+     "name": "挑战一",
+     "car": "拥有并驾驶 1980 Abarth 菲亚特 131",
+     "note": "车展购入 调校师: Noa Miyako 调校代码: 134003282",
+     "tuner": "Noa Miyako",
+     "code": "134003282",
+     "reward": "25,000点数",
+     "subs": [
+      {
+       "name": "挑战二",
+       "text": "驾驶 1980 Abarth 菲亚特 131 在 拓荒者 获得4星"
+      },
+      {
+       "name": "挑战三",
+       "text": "驾驶 1980 Abarth 菲亚特 131 赢得2场 泥地赛"
+      },
+      {
+       "name": "挑战四",
+       "text": "驾驶 1980 Abarth 菲亚特 131 达成3次 终极破坏技术"
+      }
+     ],
+     "level": "硬性指定车型"
+    }
+   ]
+  },
+  {
+   "title": "系列赛3 意大利奇珍 冬季",
+   "date": "7月30日 至 8月6日",
+   "hdr": 500,
+   "events": [
+    {
+     "type": "照片挑战",
+     "name": "#优雅古城",
+     "car": "在 弘前城 拍摄一张任意经典跑车的照片",
+     "note": "在 弘前城 拍摄一张任意经典跑车的照片",
+     "tuner": "",
+     "code": "",
+     "reward": "服装奖励",
+     "subs": [],
+     "level": "品牌/条件限定"
+    },
+    {
+     "type": "寻宝游戏",
+     "name": "北部区",
+     "car": "四季彩之丘高速路旁",
+     "note": "四季彩之丘高速路旁",
+     "tuner": "",
+     "code": "",
+     "reward": "100,000点数",
+     "subs": [],
+     "level": "无车辆限制"
+    },
+    {
+     "type": "终极考验",
+     "name": "洪水 汗水与齿轮",
+     "car": "2016 Jeep Trailcat",
+     "note": "车展购入 调校师: Noa Miyako 调校代码: 386037734",
+     "tuner": "Noa Miyako",
+     "code": "386037734",
+     "reward": "法拉利 488 GTB",
+     "subs": [],
+     "level": "类别限定"
+    },
+    {
+     "type": "季节锦标赛",
+     "name": "游戏时间",
+     "car": "2008 道奇 Viper SRT-10 ACR",
+     "note": "车展购入 调校师: MSR Sam 调校代码: 178562517",
+     "tuner": "MSR Sam",
+     "code": "178562517",
+     "reward": "阿尔法·罗密欧 Giuliu '17",
+     "subs": [],
+     "level": "类别限定"
+    },
+    {
+     "type": "季节锦标赛",
+     "name": "敞篷意识",
+     "car": "1985  丰田 Sprinter Trueno GT Apex",
+     "note": "车展购入 调校师：MSR Sola 调校代码：171913896",
+     "tuner": "MSR Sola",
+     "code": "171913896",
+     "reward": "Gallardo Spyder",
+     "subs": [],
+     "level": "类别限定"
+    },
+    {
+     "type": "计时赛",
+     "name": "北部计时赛",
+     "car": "2013 丰田86",
+     "note": "车展购入 调校师：Noa Seako 调校代码：133339236",
+     "tuner": "Noa Seako",
+     "code": "133339236",
+     "reward": "抽奖",
+     "subs": [],
+     "level": "推荐用车"
+    },
+    {
+     "type": "危险标志",
+     "name": "嘉年华飞跃",
+     "car": "2013 丰田86",
+     "note": "兑换 一次 抽奖或超级抽奖",
+     "tuner": "",
+     "code": "",
+     "reward": "抽奖",
+     "subs": [],
+     "level": "推荐用车"
+    },
+    {
+     "type": "拓荒者门",
+     "name": "穿林近道",
+     "car": "2013 丰田86",
+     "note": "测速照相",
+     "tuner": "",
+     "code": "",
+     "reward": "抽奖",
+     "subs": [],
+     "level": "推荐用车"
+    },
+    {
+     "type": "捉迷藏",
+     "name": "5 对 1",
+     "car": "完成一次 捉迷藏 游戏",
+     "note": "完成一次 捉迷藏 游戏",
+     "tuner": "",
+     "code": "",
+     "reward": "Urus '19",
+     "subs": [],
+     "level": "无车辆限制"
+    },
+    {
+     "type": "地平线特技派对",
+     "name": "迷你游戏",
+     "car": "完成任意地平线特技派对",
+     "note": "完成任意地平线特技派对",
+     "tuner": "",
+     "code": "",
+     "reward": "极限竞速LINK奖励",
+     "subs": [],
+     "level": "无车辆限制"
+    },
+    {
+     "type": "地平线乐玩",
+     "name": "时间差",
+     "car": "完成一次 地平线竞速锦标赛",
+     "note": "完成一次 地平线竞速锦标赛",
+     "tuner": "",
+     "code": "",
+     "reward": "蓝旗亚 Delta S4",
+     "subs": [],
+     "level": "无车辆限制"
+    },
+    {
+     "type": "每月劲敌",
+     "name": "电器街环道赛",
+     "car": "完成一圈干净圈",
+     "note": "干净圈要求 无碰撞 无倒转 无自动驾驶",
+     "tuner": "",
+     "code": "",
+     "reward": "超级抽奖",
+     "subs": [],
+     "level": "无车辆限制"
+    },
+    {
+     "type": "每日挑战",
+     "name": "物超所值",
+     "car": "花费 15000点数 升级任意 意大利 车辆",
+     "note": "车展购入 调校师: Noa Miyako 调校代码: 151338024",
+     "tuner": "Noa Miyako",
+     "code": "151338024",
+     "reward": "5,000点数",
+     "subs": [
+      {
+       "name": "尖子生",
+       "text": "1991 本田 Beat"
+      },
+      {
+       "name": "海底蝙蝠",
+       "text": "1984 欧宝 Manta 400"
+      },
+      {
+       "name": "完美画面",
+       "text": "拍摄一张你的爱车的照片"
+      },
+      {
+       "name": "跟随节奏",
+       "text": "1991 本田 Beat"
+      },
+      {
+       "name": "旧车新售",
+       "text": "购买一辆改装车"
+      },
+      {
+       "name": "干净比赛",
+       "text": "在任意 街头赛 中达成3次任意等级的 干净利落跑法技术"
+      }
+     ],
+     "level": "无车辆限制"
+    },
+    {
+     "type": "每周挑战",
+     "name": "挑战一",
+     "car": "拥有并驾驶 2014 兰博基尼 Huracan LP 610-4",
+     "note": "车展购入 调校师: Noa Miyako 调校代码: 593983862",
+     "tuner": "Noa Miyako",
+     "code": "593983862",
+     "reward": "25,000点数",
+     "subs": [
+      {
+       "name": "挑战二",
+       "text": "驾驶 2014 兰博基尼 Huracan LP 610-4 达成一次 杰出连续技术"
+      },
+      {
+       "name": "挑战三",
+       "text": "驾驶 2014 兰博基尼 Huracan LP 610-4 曾尔计时赛完成2圈"
+      },
+      {
+       "name": "挑战四",
+       "text": "拍摄张你的 2014 兰博基尼 Huracan LP 610-4 的照片"
+      }
+     ],
+     "level": "硬性指定车型"
+    }
+   ]
+  },
+  {
+   "title": "系列赛3 意大利奇珍 秋季",
+   "date": "7月23日 至 7月30日",
+   "hdr": 561,
+   "events": [
+    {
+     "type": "照片挑战",
+     "name": "#下午茶",
+     "car": "在 鸣尾高尔夫球场 拍摄 玛莎拉蒂 Ghibli Cup 照片",
+     "note": "在 鸣尾高尔夫球场 拍摄 玛莎拉蒂 Ghibli Cup 照片",
+     "tuner": "",
+     "code": "",
+     "reward": "极限竞速LINK奖励",
+     "subs": [],
+     "level": "品牌/条件限定"
+    },
+    {
+     "type": "收藏品",
+     "name": "坦谢咖啡",
+     "car": "在 伊根地区 破坏 20件 拿铁",
+     "note": "在 伊根地区 破坏 20件 拿铁",
+     "tuner": "",
+     "code": "",
+     "reward": "表情奖励",
+     "subs": [],
+     "level": "无车辆限制"
+    },
+    {
+     "type": "终极考验",
+     "name": "骏马飞驰",
+     "car": "2013 法拉利 458 Speciale",
+     "note": "车展购入 调校师：MSR Sola 调校代码：669988125",
+     "tuner": "MSR Sola",
+     "code": "669988125",
+     "reward": "法拉利 458 S",
+     "subs": [],
+     "level": "类别限定"
+    },
+    {
+     "type": "季节锦标赛",
+     "name": "拉力出发！",
+     "car": "2008 三菱 Lancer Evolution X GSR",
+     "note": "车展购入 调校师：Noa Seako 调校代码：398256877",
+     "tuner": "Noa Seako",
+     "code": "398256877",
+     "reward": "阿尔法·罗密欧 4C",
+     "subs": [],
+     "level": "类别限定"
+    },
+    {
+     "type": "季节锦标赛",
+     "name": "风景攀爬赛",
+     "car": "2017 阿尔法罗密欧 Giulia Quadrifoglio",
+     "note": "车展购入 调校师：CaiGou YYY 调校代码：717259437",
+     "tuner": "CaiGou YYY",
+     "code": "717259437",
+     "reward": "玛莎拉蒂 Ghibli '97",
+     "subs": [],
+     "level": "类别限定"
+    },
+    {
+     "type": "直线车友赛",
+     "name": "色川四分之一英里",
+     "car": "2015 法拉利 488 GTB",
+     "note": "车展购入 调校师：CaiGou YYY 调校代码：150784744",
+     "tuner": "CaiGou YYY",
+     "code": "150784744",
+     "reward": "抽奖",
+     "subs": [],
+     "level": "类别限定"
+    },
+    {
+     "type": "测速照相",
+     "name": "伊良部大桥",
+     "car": "2015 法拉利 488 GTB",
+     "note": "车展购入 调校师：CaiGou YYY 调校代码：150784744",
+     "tuner": "CaiGou YYY",
+     "code": "150784744",
+     "reward": "抽奖",
+     "subs": [],
+     "level": "推荐用车"
+    },
+    {
+     "type": "测速区间",
+     "name": "南野弯道",
+     "car": "2014 兰博基尼 Huracan LP 610-4",
+     "note": "车展购入 调校师：CaiGou YYY 调校代码：677016506",
+     "tuner": "CaiGou YYY",
+     "code": "677016506",
+     "reward": "抽奖",
+     "subs": [],
+     "level": "推荐用车"
+    },
+    {
+     "type": "淘汰之王",
+     "name": "大逃杀",
+     "car": "结束时取得第30名次或以上",
+     "note": "结束时取得第30名次或以上",
+     "tuner": "",
+     "code": "",
+     "reward": "Abarth 131",
+     "subs": [],
+     "level": "无车辆限制"
+    },
+    {
+     "type": "地平线特技派对",
+     "name": "迷你游戏",
+     "car": "完成任意地平线特技派对",
+     "note": "完成任意地平线特技派对",
+     "tuner": "",
+     "code": "",
+     "reward": "服装奖励",
+     "subs": [],
+     "level": "无车辆限制"
+    },
+    {
+     "type": "地平线乐玩",
+     "name": "极速科技",
+     "car": "在 规格赛 中达成 5 次 Link极速技术",
+     "note": "在 规格赛 中达成 5 次 Link极速技术",
+     "tuner": "",
+     "code": "",
+     "reward": "Portofino '18",
+     "subs": [],
+     "level": "无车辆限制"
+    },
+    {
+     "type": "每月劲敌",
+     "name": "电器街环道赛",
+     "car": "完成一圈干净圈",
+     "note": "干净圈要求 无碰撞 无倒转 无自动驾驶",
+     "tuner": "",
+     "code": "",
+     "reward": "超级抽奖",
+     "subs": [],
+     "level": "无车辆限制"
+    },
+    {
+     "type": "每日挑战",
+     "name": "破坏时刻",
+     "car": "驾驶任意 意大利 车辆达成 5 次 终极破坏技术 ",
+     "note": "驾驶任意 意大利 车辆达成 5 次 终极破坏技术 ",
+     "tuner": "",
+     "code": "",
+     "reward": "5,000点数",
+     "subs": [
+      {
+       "name": "刷圈时间",
+       "text": "驾驶任意车辆在 北部计时赛 完成 3 圈"
+      },
+      {
+       "name": "一点心意",
+       "text": "向其他玩家发送礼物掉落箱"
+      },
+      {
+       "name": "玛莎千里",
+       "text": "驾驶任意 玛莎拉蒂 车辆积累行驶 16.1公里"
+      },
+      {
+       "name": "午夜巡航",
+       "text": "驾驶任意车辆赢得一场 山道竞速赛"
+      },
+      {
+       "name": "5星漂移视角",
+       "text": "2013 漂移方程式 #777 雪佛兰 Corvette"
+      },
+      {
+       "name": "冲向终点",
+       "text": "完成一次 码头压力赛 赛事 "
+      }
+     ],
+     "level": "无车辆限制"
+    },
+    {
+     "type": "每周挑战",
+     "name": "挑战一",
+     "car": "拥有并驾驶 阿尔法·罗密欧 4C",
+     "note": "车展购入 调校师: Noa Miyako 调校代码: 178032945",
+     "tuner": "Noa Miyako",
+     "code": "178032945",
+     "reward": "25,000点数",
+     "subs": [
+      {
+       "name": "挑战二",
+       "text": "完成任意一场 “直线车友赛 4C 完成一场 直线车友赛"
+      },
+      {
+       "name": "挑战三",
+       "text": "驾驶 阿尔法·罗密欧 4C 在 公路环道赛 达成 4 次极速技术"
+      },
+      {
+       "name": "挑战四",
+       "text": "驾驶 阿尔法·罗密欧 4C 在 测速区间 获得 5 星"
+      }
+     ],
+     "level": "硬性指定车型"
+    }
+   ]
+  },
+  {
+   "title": "系列赛3 意大利奇珍 夏季",
+   "date": "7月16日 至 7月23日",
+   "hdr": 622,
+   "events": [
+    {
+     "type": "照片挑战",
+     "name": "花之力",
+     "car": "在 四季彩之丘 拍摄任意 法拉利 车辆照片",
+     "note": "在 四季彩之丘 拍摄任意 法拉利 车辆照片",
+     "tuner": "",
+     "code": "",
+     "reward": "服饰 粉色运动外套",
+     "subs": [],
+     "level": "品牌/条件限定"
+    },
+    {
+     "type": "寻宝游戏",
+     "name": "南岸区",
+     "car": "色川航天中心",
+     "note": "色川航天中心",
+     "tuner": "",
+     "code": "",
+     "reward": "100,000点数",
+     "subs": [],
+     "level": "无车辆限制"
+    },
+    {
+     "type": "终极考验",
+     "name": "跨越界限",
+     "car": "1992 丰田 Celica GT-Four RC ST185",
+     "note": "车展购入 调校师: Noa Miyako 调校代码: 144547492",
+     "tuner": "Noa Miyako",
+     "code": "144547492",
+     "reward": "法拉利 Dion 246 GT",
+     "subs": [],
+     "level": "类别限定"
+    },
+    {
+     "type": "季节锦标赛",
+     "name": "夜色风光",
+     "car": "1985 丰田 Trueno GT APEX",
+     "note": "车展购入 调校师：MSR Sam 调校代码：649358159",
+     "tuner": "MSR Sam",
+     "code": "649358159",
+     "reward": "兰博基尼 Tecnica",
+     "subs": [],
+     "level": "类别限定"
+    },
+    {
+     "type": "季节锦标赛",
+     "name": "意式微醺",
+     "car": "2014 兰博基尼 Huracan LP 610-4",
+     "note": "车展购入 调校师：CaiGou YYY 调校代码：471520069",
+     "tuner": "CaiGou YYY",
+     "code": "471520069",
+     "reward": "阿尔法·罗密欧 155 Q4",
+     "subs": [],
+     "level": "类别限定"
+    },
+    {
+     "type": "危险标志",
+     "name": "机场起飞",
+     "car": "1992 阿尔法·罗密欧 155 Q4",
+     "note": "车展购入 调校师：MSR Mian 调校代码：146813065",
+     "tuner": "MSR Mian",
+     "code": "146813065",
+     "reward": "抽奖",
+     "subs": [],
+     "level": "推荐用车"
+    },
+    {
+     "type": "测速区间",
+     "name": "兴志内村",
+     "car": "1992 阿尔法·罗密欧 155 Q4",
+     "note": "车展购入 调校师：MSR Mian 调校代码：146813065",
+     "tuner": "MSR Mian",
+     "code": "146813065",
+     "reward": "抽奖",
+     "subs": [],
+     "level": "推荐用车"
+    },
+    {
+     "type": "漂移区域",
+     "name": "向日葵田",
+     "car": "1986 蓝旗亚 Delta S4",
+     "note": "车展购入 调校师: YUKI OwO7763 调校代码: 637677413",
+     "tuner": "YUKI OwO7763",
+     "code": "637677413",
+     "reward": "抽奖",
+     "subs": [],
+     "level": "推荐用车"
+    },
+    {
+     "type": "计时赛",
+     "name": "曾尔计时赛",
+     "car": "1992 阿尔法·罗密欧 155 Q4",
+     "note": "车展购入 调校师：MSR Mian 调校代码：146813065",
+     "tuner": "MSR Mian",
+     "code": "146813065",
+     "reward": "抽奖",
+     "subs": [],
+     "level": "推荐用车"
+    },
+    {
+     "type": "地平线特技派对",
+     "name": "迷你游戏",
+     "car": "完成任意的地平线特技派对",
+     "note": "完成任意的地平线特技派对",
+     "tuner": "",
+     "code": "",
+     "reward": "汽车喇叭 羊叫",
+     "subs": [],
+     "level": "无车辆限制"
+    },
+    {
+     "type": "Horizon Play",
+     "name": "地平线漂移 - 恰如其名",
+     "car": "地平线漂移锦标赛达成 10次 漂移或手刹漂移 技术",
+     "note": "地平线漂移锦标赛达成 10次 漂移或手刹漂移 技术",
+     "tuner": "",
+     "code": "",
+     "reward": "极限竞速LINK奖励",
+     "subs": [],
+     "level": "无车辆限制"
+    },
+    {
+     "type": "每月劲敌",
+     "name": "电器街环道赛",
+     "car": "完成一圈干净圈",
+     "note": "干净圈要求 无碰撞 无倒转 无自动驾驶",
+     "tuner": "",
+     "code": "",
+     "reward": "超级抽奖",
+     "subs": [],
+     "level": "无车辆限制"
+    },
+    {
+     "type": "每日挑战",
+     "name": "\"意\"气相投",
+     "car": "驾驶任意来自 意大利 车辆在 进化世界车友会 停车",
+     "note": "车展购入 调校师：FuzzyTexas81292  调校代码: 807427629",
+     "tuner": "FuzzyTexas81292",
+     "code": "807427629",
+     "reward": "5,000点数",
+     "subs": [
+      {
+       "name": "极速狂飙",
+       "text": "驾驶任意车辆在 公路赛 达成 10 次任意 极速技术 "
+      },
+      {
+       "name": "激烈角逐",
+       "text": "1986 奥迪 #2 Sport quattro S1"
+      },
+      {
+       "name": "美食盛宴",
+       "text": "驾驶任意车辆破坏 自动售货机 达成 3 次 休闲小食技术 "
+      },
+      {
+       "name": "爱死爱死！",
+       "text": "驾驶 Abarth 595 esseesse 并对其拍摄一张照片"
+      },
+      {
+       "name": "风驰电掣",
+       "text": "驾驶任意车辆维持 161KM/H 15 秒"
+      },
+      {
+       "name": "发挥特长",
+       "text": "2014 兰博基尼 Huracan LP 610-4"
+      }
+     ],
+     "level": "无车辆限制"
+    },
+    {
+     "type": "每周挑战",
+     "name": "挑战一",
+     "car": "拥有并驾驶 1969 法拉利 Dion 246 GT",
+     "note": "车展购入 调校师: Noa Miyako 调校代码: 369466268",
+     "tuner": "Noa Miyako",
+     "code": "369466268",
+     "reward": "25,000点数",
+     "subs": [
+      {
+       "name": "挑战二",
+       "text": "驾驶 1969 法拉利 Dion 246 GT 在 测速照相 中积累获得 6 星"
+      },
+      {
+       "name": "挑战三",
+       "text": "驾驶 1969 法拉利 Dion 246 GT 在任意 公路赛 赢得 2 场胜利"
+      },
+      {
+       "name": "挑战四",
+       "text": "驾驶 1969 法拉利 Dion 246 GT 并对其拍摄一张相片"
+      }
+     ],
+     "level": "硬性指定车型"
+    }
+   ]
+  },
+  {
+   "title": "系列赛2 地平线岁月 春季",
+   "date": "7月9日 至 7月16日",
+   "hdr": 683,
+   "events": [
+    {
+     "type": "照片挑战",
+     "name": "#腾空",
+     "car": "拍摄一张 2010 年代 车辆 腾空 照片",
+     "note": "拍摄一张 2010 年代 车辆 腾空 照片",
+     "tuner": "",
+     "code": "",
+     "reward": "汽车喇叭奖励",
+     "subs": [],
+     "level": "品牌/条件限定"
+    },
+    {
+     "type": "寻宝游戏",
+     "name": "伊东区",
+     "car": "伊东区 东北部海边",
+     "note": "伊东区 东北部海边",
+     "tuner": "",
+     "code": "",
+     "reward": "100,000点数",
+     "subs": [],
+     "level": "无车辆限制"
+    },
+    {
+     "type": "终极考验",
+     "name": "直奔追逐",
+     "car": "2017  雪佛兰 Camaro ZL1",
+     "note": "车展购入 调校师: Noa Miyako 调校代码: 136381024",
+     "tuner": "Noa Miyako",
+     "code": "136381024",
+     "reward": "福特 GT '17",
+     "subs": [],
+     "level": "类别限定"
+    },
+    {
+     "type": "季节锦标赛",
+     "name": "洪水 汗水与齿轮",
+     "car": "2016 Jeep Traiilcat",
+     "note": "车展购入 调校师: Noa Miyako 调校代码: 386037734",
+     "tuner": "Noa Miyako",
+     "code": "386037734",
+     "reward": "Jeep Trackhawk",
+     "subs": [],
+     "level": "类别限定"
+    },
+    {
+     "type": "季节锦标赛",
+     "name": "S1 赢了吗 ？",
+     "car": "2014 兰博基尼 Huracan LP 610-4",
+     "note": "车展购入 调校师：CaiGou YYY 调校代码：471520069",
+     "tuner": "CaiGou YYY",
+     "code": "471520069",
+     "reward": "Ariel Nomad",
+     "subs": [],
+     "level": "类别限定"
+    },
+    {
+     "type": "危险标志",
+     "name": "过山车飞跃",
+     "car": "2019 阿斯顿马丁 Vantage ",
+     "note": "车展购入 调校师: Noa Miyako 调校代码: 196325887",
+     "tuner": "Noa Miyako",
+     "code": "196325887",
+     "reward": "抽奖",
+     "subs": [],
+     "level": "推荐用车"
+    },
+    {
+     "type": "测速照相",
+     "name": "伊东直道",
+     "car": "2019 阿斯顿马丁 Vantage ",
+     "note": "车展购入 调校师: Noa Miyako 调校代码: 196325887",
+     "tuner": "Noa Miyako",
+     "code": "196325887",
+     "reward": "抽奖",
+     "subs": [],
+     "level": "推荐用车"
+    },
+    {
+     "type": "漂移区域",
+     "name": "河流竞速",
+     "car": "2013 漂移方程式 #777 雪佛兰 Corvette",
+     "note": "2015 迈凯伦 570S Coupe",
+     "tuner": "",
+     "code": "",
+     "reward": "抽奖",
+     "subs": [],
+     "level": "推荐用车"
+    },
+    {
+     "type": "直线车友赛",
+     "name": "嘉年华公里",
+     "car": "2019 阿斯顿马丁 Vantage ",
+     "note": "车展购入 调校师: Noa Miyako 调校代码: 196325887",
+     "tuner": "Noa Miyako",
+     "code": "196325887",
+     "reward": "抽奖",
+     "subs": [],
+     "level": "类别限定"
+    },
+    {
+     "type": "Horizon Play",
+     "name": "怪物高飞",
+     "car": "自定义竞速 驾驶 拉力赛怪物 达成3次惊人空中飞车技术",
+     "note": "自定义竞速 驾驶 拉力赛怪物 达成3次惊人空中飞车技术",
+     "tuner": "",
+     "code": "",
+     "reward": "RS 4 Avant '18",
+     "subs": [],
+     "level": "无车辆限制"
+    },
+    {
+     "type": "每月劲敌",
+     "name": "奈良景宿环道赛",
+     "car": "完成一圈干净圈",
+     "note": "干净圈要求 无碰撞 无倒转 无自动驾驶",
+     "tuner": "",
+     "code": "",
+     "reward": "超级抽奖",
+     "subs": [],
+     "level": "无车辆限制"
+    },
+    {
+     "type": "每日挑战",
+     "name": "等个伴儿",
+     "car": "驾驶任意来自 2000年代 车辆在进化世界车友会停车",
+     "note": "车展购入 调校师: Noa Miyako 调校代码: 386037734",
+     "tuner": "Noa Miyako",
+     "code": "386037734",
+     "reward": "5,000点数",
+     "subs": [
+      {
+       "name": "Jeep 翻滚",
+       "text": "2016 Jeep Traiilcat"
+      },
+      {
+       "name": "最精彩的表演赛",
+       "text": "完成一场 表演赛 赛事"
+      },
+      {
+       "name": "天幕杀机",
+       "text": "2019 阿斯顿马丁 Vantage "
+      },
+      {
+       "name": "数星星",
+       "text": "2019 阿斯顿马丁 Vantage "
+      },
+      {
+       "name": "幸运加成",
+       "text": "2019 阿斯顿马丁 Vantage "
+      },
+      {
+       "name": "时代标志",
+       "text": "2019 阿斯顿马丁 Vantage "
+      }
+     ],
+     "level": "无车辆限制"
+    },
+    {
+     "type": "每周挑战",
+     "name": "挑战一",
+     "car": "拥有并驾驶 2016 Ariel Nomad",
+     "note": "车展购入 调校师: Noa Miyako 调校代码: 177324562",
+     "tuner": "Noa Miyako",
+     "code": "177324562",
+     "reward": "25,000点数",
+     "subs": [
+      {
+       "name": "挑战二",
+       "text": "驾驶 2016 Ariel Nomad 在拓荒者获得6星"
+      },
+      {
+       "name": "挑战三",
+       "text": "驾驶 2016 Ariel Nomad 达成2次陨星计划技术"
+      },
+      {
+       "name": "挑战四",
+       "text": "驾驶 2016 Ariel Nomad 赢得一场越野赛"
+      }
+     ],
+     "level": "硬性指定车型"
+    }
+   ]
+  },
+  {
+   "title": "系列赛2 地平线岁月 冬季",
+   "date": "7月2日 至 7月9日",
+   "hdr": 742,
+   "events": [
+    {
+     "type": "照片挑战",
+     "name": "#千禧怪兽",
+     "car": "拍摄一张 2000 年代 拉力赛怪物 车辆照片",
+     "note": "拍摄一张 2000 年代 拉力赛怪物 车辆照片",
+     "tuner": "",
+     "code": "",
+     "reward": "极限竞速LINK奖励",
+     "subs": [],
+     "level": "品牌/条件限定"
+    },
+    {
+     "type": "寻宝游戏",
+     "name": "外山区",
+     "car": "外山区",
+     "note": "外山区 地图最顶端\t",
+     "tuner": "",
+     "code": "",
+     "reward": "100,000点数",
+     "subs": [],
+     "level": "无车辆限制"
+    },
+    {
+     "type": "终极考验",
+     "name": "前瞻思维",
+     "car": "2001 讴歌 Acura Integra Type R",
+     "note": "车展购入 调校师: MSR Sola 调校代码:158988678",
+     "tuner": "MSR Sola",
+     "code": "158988678",
+     "reward": "法拉利 430 S",
+     "subs": [],
+     "level": "类别限定"
+    },
+    {
+     "type": "季节锦标赛",
+     "name": "离经叛道",
+     "car": "2008 三菱 Lancer Evolution X GSR",
+     "note": "车展购入 调校师:Noa Seako 调校代码:398256877",
+     "tuner": "Noa Seako",
+     "code": "398256877",
+     "reward": "奥迪 RS 4 '06",
+     "subs": [],
+     "level": "类别限定"
+    },
+    {
+     "type": "季节锦标赛",
+     "name": "复古重现",
+     "car": "2002日产 Silvia SPEC-R",
+     "note": "车展购入 调校师: MSR Sam 调校代码:297176188",
+     "tuner": "MSR Sam",
+     "code": "297176188",
+     "reward": "讴歌 Integra",
+     "subs": [],
+     "level": "无车辆限制"
+    },
+    {
+     "type": "计时赛",
+     "name": "北部计时赛",
+     "car": "2008 道奇 Viper SRT-10 ACR",
+     "note": "车展购入 调校师: Noa Miyako 调校代码: 304401652",
+     "tuner": "Noa Miyako",
+     "code": "304401652",
+     "reward": "抽奖",
+     "subs": [],
+     "level": "推荐用车"
+    },
+    {
+     "type": "测速区间",
+     "name": "立山黑部阿尔卑斯山脉区间",
+     "car": "2008 道奇 Viper SRT-10 ACR",
+     "note": "车展购入 调校师: Noa Miyako 调校代码: 304401652",
+     "tuner": "Noa Miyako",
+     "code": "304401652",
+     "reward": "抽奖",
+     "subs": [],
+     "level": "推荐用车"
+    },
+    {
+     "type": "漂移区域",
+     "name": "榛名山",
+     "car": "服装 - 经典夹克",
+     "note": "Link - 渐强欧陆节拍",
+     "tuner": "",
+     "code": "",
+     "reward": "抽奖",
+     "subs": [],
+     "level": "无车辆限制"
+    },
+    {
+     "type": "Horizon Play",
+     "name": "英雄",
+     "car": "完成一场 地平线竞速",
+     "note": "无论输赢完成赛事即可",
+     "tuner": "",
+     "code": "",
+     "reward": "本田 2000",
+     "subs": [],
+     "level": "无车辆限制"
+    },
+    {
+     "type": "淘汰之王",
+     "name": "大逃杀",
+     "car": "结束时取得第30名次或以上",
+     "note": "结束时取得第30名次或以上",
+     "tuner": "",
+     "code": "",
+     "reward": "Megane R26.R",
+     "subs": [],
+     "level": "无车辆限制"
+    },
+    {
+     "type": "每月劲敌",
+     "name": "奈良景宿环道赛",
+     "car": "完成一圈干净圈",
+     "note": "干净圈要求 无碰撞 无倒转 无自动驾驶",
+     "tuner": "",
+     "code": "",
+     "reward": "超级抽奖",
+     "subs": [],
+     "level": "无车辆限制"
+    },
+    {
+     "type": "每日挑战",
+     "name": "火辣停车",
+     "car": "驾驶任意来自2000年代的车辆在进化世界车友会停车",
+     "note": "车展购入 调校师: Noa Miyako 调校代码: 110640845",
+     "tuner": "Noa Miyako",
+     "code": "110640845",
+     "reward": "5,000点数",
+     "subs": [
+      {
+       "name": "触壁反弹",
+       "text": "驾驶任意来自2000年代的车辆达成3次漂移轻触技术赛"
+      },
+      {
+       "name": "一 Peel 绝尘",
+       "text": "驾驶任意 Peel 在任意计时赛赛"
+      },
+      {
+       "name": "荣耀之光",
+       "text": "驾驶任意来自2000年代的车辆在拓荒者总计获得3星"
+      },
+      {
+       "name": "千禧轻车",
+       "text": "1991 本田 Beat"
+      },
+      {
+       "name": "Mini 居中",
+       "text": "驾驶任意 Mini 汽车达成一次穿梭自如技术"
+      },
+      {
+       "name": "旋转城市",
+       "text": "驾驶任意来自2000年代的车辆在市内竞速漂移区域赛获得3星"
+      }
+     ],
+     "level": "无车辆限制"
+    },
+    {
+     "type": "每周挑战",
+     "name": "挑战一",
+     "car": "拥有并驾驶 2001 三菱 Lancer Evolution VI GSR TM Edition",
+     "note": "车展购入 调校师: Noa Miyako 调校代码: 878941599",
+     "tuner": "Noa Miyako",
+     "code": "878941599",
+     "reward": "25,000点数",
+     "subs": [
+      {
+       "name": "挑战二",
+       "text": "驾驶 2001 三菱 Lancer Evolution VI GSR TM Edition 在石部计时赛中完成3圈"
+      },
+      {
+       "name": "挑战三",
+       "text": "驾驶 2001 三菱 Lancer Evolution VI GSR TM Edition 在嘉年华环线测速区间获得3星"
+      },
+      {
+       "name": "挑战四",
+       "text": "驾驶 2001 三菱 Lancer Evolution VI GSR TM Edition 赢得一场泥地赛"
+      }
+     ],
+     "level": "硬性指定车型"
+    }
+   ]
+  },
+  {
+   "title": "系列赛2 地平线岁月 秋季",
+   "date": "6月26日 至 7月3日",
+   "hdr": 801,
+   "events": [
+    {
+     "type": "照片挑战",
+     "name": "#随手拍大猫",
+     "car": "拍摄一张 1990 年代 捷豹 车辆照片",
+     "note": "拍摄一张 1990 年代 捷豹 车辆照片",
+     "tuner": "",
+     "code": "",
+     "reward": "汽车喇叭奖励",
+     "subs": [],
+     "level": "品牌/条件限定"
+    },
+    {
+     "type": "收藏品",
+     "name": "破竹狂欢",
+     "car": "破坏30棵竹子",
+     "note": "破坏30棵竹子",
+     "tuner": "",
+     "code": "",
+     "reward": "超级抽奖",
+     "subs": [],
+     "level": "无车辆限制"
+    },
+    {
+     "type": "终极考验",
+     "name": "重返九零年代",
+     "car": "1993 捷豹 XJ220",
+     "note": "车展购入 调校师：Noa Miyako 调校代码：133285244",
+     "tuner": "Noa Miyako",
+     "code": "133285244",
+     "reward": "Diablo GTR",
+     "subs": [],
+     "level": "类别限定"
+    },
+    {
+     "type": "季节锦标赛",
+     "name": "Coswworth 不虚此行",
+     "car": "1993 福特 Mustang SVT Cobra R",
+     "note": "车展购入 调校师：MSR Sam 调校代码：972183192",
+     "tuner": "MSR Sam",
+     "code": "972183192",
+     "reward": "福特Escort '92",
+     "subs": [],
+     "level": "类别限定"
+    },
+    {
+     "type": "季节锦标赛",
+     "name": "在路上",
+     "car": "1990 斯巴鲁 LEGACY RS",
+     "note": "车展购入 调校师：MSR Sola 调校代码：375338197",
+     "tuner": "MSR Sola",
+     "code": "375338197",
+     "reward": "GMC Syclone",
+     "subs": [],
+     "level": "类别限定"
+    },
+    {
+     "type": "危险标志",
+     "name": "富士山景观",
+     "car": "1995 三菱 Montero Exceed 2800 TD",
+     "note": "车展购入 调校师: lphanhan 调校代码: 672544128",
+     "tuner": "lphanhan",
+     "code": "672544128",
+     "reward": "抽奖",
+     "subs": [],
+     "level": "推荐用车"
+    },
+    {
+     "type": "测速照相",
+     "name": "南岸弯道",
+     "car": "1995 三菱 Montero Exceed 2800 TD",
+     "note": "车展购入 调校师: lphanhan 调校代码: 672544128",
+     "tuner": "lphanhan",
+     "code": "672544128",
+     "reward": "抽奖",
+     "subs": [],
+     "level": "推荐用车"
+    },
+    {
+     "type": "拓荒者门",
+     "name": "下阪",
+     "car": "1991 本田 Beat",
+     "note": "车展购入 调校师: Noa Miyako 调校代码: 118386458",
+     "tuner": "Noa Miyako",
+     "code": "118386458",
+     "reward": "抽奖",
+     "subs": [],
+     "level": "推荐用车"
+    },
+    {
+     "type": "季节打工",
+     "name": "东京送餐",
+     "car": "完成一轮班次东京送餐打工",
+     "note": "完成3次送餐为一轮班次",
+     "tuner": "",
+     "code": "",
+     "reward": "极限竞速LINK奖励",
+     "subs": [],
+     "level": "无车辆限制"
+    },
+    {
+     "type": "地平线漂移",
+     "name": "老友记",
+     "car": "达成3次 Link 漂移技术",
+     "note": "达成3次 Link 漂移技术",
+     "tuner": "",
+     "code": "",
+     "reward": "马自达 RX-7 '92",
+     "subs": [],
+     "level": "无车辆限制"
+    },
+    {
+     "type": "每月劲敌",
+     "name": "奈良景宿环道赛",
+     "car": "完成一圈干净圈",
+     "note": "干净圈要求 无碰撞 无倒转 无自动驾驶",
+     "tuner": "",
+     "code": "",
+     "reward": "超级抽奖",
+     "subs": [],
+     "level": "无车辆限制"
+    },
+    {
+     "type": "每日挑战",
+     "name": "停车会友",
+     "car": "驾驶任意来自1990年代的车辆在进化世界车友会停车",
+     "note": "车展购入 调校师：Noa Miyako 调校代码：151338024",
+     "tuner": "Noa Miyako",
+     "code": "151338024",
+     "reward": "5,000点数",
+     "subs": [
+      {
+       "name": "纯净之魂",
+       "text": "1991 本田 Beat"
+      },
+      {
+       "name": "冲刺时间",
+       "text": "完成一场地平线狂飙赛事"
+      },
+      {
+       "name": "跳来跳去",
+       "text": "1991 GMC Syclone"
+      },
+      {
+       "name": "对决",
+       "text": "1991 本田 Beat"
+      },
+      {
+       "name": "新鲜王子飞得高",
+       "text": "驾驶 1957 雪佛兰 Bel Air 达成一次杰出空中飞车技术"
+      },
+      {
+       "name": "沙滩生活",
+       "text": "2020 Jimco #179 Hammerhead Class 1"
+      }
+     ],
+     "level": "无车辆限制"
+    },
+    {
+     "type": "每周挑战",
+     "name": "挑战一",
+     "car": "拥有并驾驶 1991 GMC Syclone",
+     "note": "车展购入 调校师：Noa Miyako 调校代码：125713840",
+     "tuner": "Noa Miyako",
+     "code": "125713840",
+     "reward": "25,000点数",
+     "subs": [
+      {
+       "name": "挑战二",
+       "text": "驾驶 1991 GMC Syclone 在色川四分之一英里直线车友赛中完成2场比赛"
+      },
+      {
+       "name": "挑战三",
+       "text": "驾驶 1991 GMC Syclone 达成3次惊人破坏技术"
+      },
+      {
+       "name": "挑战四",
+       "text": "驾驶 1991 GMC Syclone 赢得一场街头赛"
+      }
+     ],
+     "level": "硬性指定车型"
+    }
+   ]
+  },
+  {
+   "title": "系列赛2 地平线岁月 夏季",
+   "date": "6月19日 至 6月26日",
+   "hdr": 860,
+   "events": [
+    {
+     "type": "照片挑战",
+     "name": "漂移之乐",
+     "car": "在漂移时拍摄一张照片",
+     "note": "在漂移时拍摄一张1980年代任意车辆照片",
+     "tuner": "",
+     "code": "",
+     "reward": "极限竞速LINK奖励",
+     "subs": [],
+     "level": "品牌/条件限定"
+    },
+    {
+     "type": "寻宝游戏",
+     "name": "南岸区",
+     "car": "南岸区",
+     "note": "地图左下角南岸区右下角",
+     "tuner": "",
+     "code": "",
+     "reward": "100,000点数",
+     "subs": [],
+     "level": "无车辆限制"
+    },
+    {
+     "type": "终极考验",
+     "name": "挑战极限",
+     "car": "1983 沃尔沃 242 Turbo Evolution",
+     "note": "车展购入 调校师：Noa Seako 调校代码：110714833",
+     "tuner": "Noa Seako",
+     "code": "110714833",
+     "reward": "奥迪 #2 S1 '86",
+     "subs": [],
+     "level": "类别限定"
+    },
+    {
+     "type": "季节锦标赛",
+     "name": "街头车手",
+     "car": "1988 宝马 M5",
+     "note": "车展购入 调校师：MSR Sola 调校代码：122987600",
+     "tuner": "MSR Sola",
+     "code": "122987600",
+     "reward": "DeLorean DMC-12",
+     "subs": [],
+     "level": "类别限定"
+    },
+    {
+     "type": "季节锦标赛",
+     "name": "掀背车的门道",
+     "car": "1986 本田 Civic Si",
+     "note": "车展购入 调校师：Fuzzytexas81292 调校代码：921010878",
+     "tuner": "Fuzzytexas81292",
+     "code": "921010878",
+     "reward": "宝马 M3 '88",
+     "subs": [],
+     "level": "类别限定"
+    },
+    {
+     "type": "直线车友赛",
+     "name": "伊东半英里",
+     "car": "1986 本田 Civic Si",
+     "note": "车展购入 调校师：Noa Miyako 调校代码：113209433",
+     "tuner": "Noa Miyako",
+     "code": "113209433",
+     "reward": "抽奖",
+     "subs": [],
+     "level": "类别限定"
+    },
+    {
+     "type": "测速区间",
+     "name": "深林",
+     "car": "1986 本田 Civic Si",
+     "note": "车展购入 调校师：Noa Miyako 调校代码：113209433",
+     "tuner": "Noa Miyako",
+     "code": "113209433",
+     "reward": "抽奖",
+     "subs": [],
+     "level": "推荐用车"
+    },
+    {
+     "type": "山道对决",
+     "name": "我的小马驹",
+     "car": "驾驶任意Mustang汽车完成一场山道对决",
+     "note": "无论输赢完成赛事即可",
+     "tuner": "",
+     "code": "",
+     "reward": "抽奖",
+     "subs": [],
+     "level": "无车辆限制"
+    },
+    {
+     "type": "拓荒者",
+     "name": "那智瀑布",
+     "car": "1986 本田 Civic Si",
+     "note": "车展购入 调校师：Noa Miyako 调校代码：113209433",
+     "tuner": "Noa Miyako",
+     "code": "113209433",
+     "reward": "福特 F150 '86",
+     "subs": [],
+     "level": "推荐用车"
+    },
+    {
+     "type": "Horizon Paly",
+     "name": "捉迷藏",
+     "car": "完成一场捉迷藏赛事",
+     "note": "无论输赢完成赛事即可",
+     "tuner": "",
+     "code": "",
+     "reward": "AMG Hammer Coupe",
+     "subs": [],
+     "level": "无车辆限制"
+    },
+    {
+     "type": "每月劲敌",
+     "name": "奈良景宿环道赛",
+     "car": "完成一圈干净圈",
+     "note": "干净圈要求 无碰撞 无倒转 无自动驾驶",
+     "tuner": "",
+     "code": "",
+     "reward": "超级抽奖",
+     "subs": [],
+     "level": "无车辆限制"
+    },
+    {
+     "type": "每日挑战",
+     "name": "甜蜜座驾",
+     "car": "驾驶任意来自1980年代的车辆在进化世界车友会停车",
+     "note": "车展购入 调校师：Noa Miyako 调校代码：113209433",
+     "tuner": "Noa Miyako",
+     "code": "113209433",
+     "reward": "5,000点数",
+     "subs": [
+      {
+       "name": "谁人迎战",
+       "text": "在淘汰之王中完成一场单挑"
+      },
+      {
+       "name": "摄影神社",
+       "text": "在那智瀑布神社 驾驶任意来自1980年代的福特拍摄一张照片"
+      },
+      {
+       "name": "友爱互助",
+       "text": "向其他玩家发送礼物箱"
+      },
+      {
+       "name": "短程环道",
+       "text": "1986 本田 Civic Si"
+      },
+      {
+       "name": "捉鬼敢死队",
+       "text": "1986 本田 Civic Si"
+      },
+      {
+       "name": "转瞬即逝",
+       "text": "2009 法拉利 458 Italia"
+      }
+     ],
+     "level": "无车辆限制"
+    },
+    {
+     "type": "每周挑战",
+     "name": "挑战一",
+     "car": "拥有并驾驶 1982 DeLorean DMC-12",
+     "note": "车展购入 调校师：Noa Miyako 调校代码：172903433",
+     "tuner": "Noa Miyako",
+     "code": "172903433",
+     "reward": "25,000点数",
+     "subs": [
+      {
+       "name": "挑战二",
+       "text": "驾驶 1982 DeLorean DMC-12 维持88英里时或更高的车速10秒"
+      },
+      {
+       "name": "挑战三",
+       "text": "拍摄一张你的 1982 DeLorean DMC-12 的照片"
+      },
+      {
+       "name": "挑战四",
+       "text": "驾驶 1982 DeLorean DMC-12 赢得一场公路赛"
+      }
+     ],
+     "level": "硬性指定车型"
+    }
+   ]
+  },
+  {
+   "title": "系列赛1 欢迎来到日本 春季",
+   "date": "6月12 至 6月19日",
+   "hdr": 919,
+   "events": [
+    {
+     "type": "照片挑战",
+     "name": "#航天玩具",
+     "car": "在色川航天中心中拍摄一张照片",
+     "note": "在色川航天中心中拍摄一张赛道玩具车辆照片",
+     "tuner": "",
+     "code": "",
+     "reward": "极限竞速LINK奖励",
+     "subs": [],
+     "level": "品牌/条件限定"
+    },
+    {
+     "type": "寻宝游戏",
+     "name": "东京区",
+     "car": "东京区码头区域三层",
+     "note": "东京区码头区域三层",
+     "tuner": "",
+     "code": "",
+     "reward": "100,000点数",
+     "subs": [],
+     "level": "无车辆限制"
+    },
+    {
+     "type": "季节锦标赛",
+     "name": "高速疾行",
+     "car": "2024 福特 Mustang GT",
+     "note": "车展购入 调校师：MSR Sam 调校代码：121158501",
+     "tuner": "MSR Sam",
+     "code": "121158501",
+     "reward": "法拉利 F355",
+     "subs": [],
+     "level": "类别限定"
+    },
+    {
+     "type": "季节锦标赛",
+     "name": "速成经典",
+     "car": "1970 Datsun(达特桑) 510",
+     "note": "车展购入 调校师：MSR Sola 调校代码：112247810",
+     "tuner": "MSR Sola",
+     "code": "112247810",
+     "reward": "玛莎拉蒂 MC12",
+     "subs": [],
+     "level": "类别限定"
+    },
+    {
+     "type": "季节锦标赛",
+     "name": "弹簧启动",
+     "car": "2018 梅赛德斯-奔驰 X-Class",
+     "note": "车展购入 调校师：Noa Miyako 调校代码：184307533",
+     "tuner": "Noa Miyako",
+     "code": "184307533",
+     "reward": "MINI JCW GP '21",
+     "subs": [],
+     "level": "类别限定"
+    },
+    {
+     "type": "计时赛",
+     "name": "曾尔计时赛",
+     "car": "1984 Honda(本田) City E II",
+     "note": "车展购入 调校师：MSR Mian 调校代码：180160806",
+     "tuner": "MSR Mian",
+     "code": "180160806",
+     "reward": "抽奖",
+     "subs": [],
+     "level": "推荐用车"
+    },
+    {
+     "type": "测速照相",
+     "name": "涩谷十字路口",
+     "car": "1989 日产 Silvia K's",
+     "note": "车展购入 调校师：Noa Miyako 调校代码：155065281",
+     "tuner": "Noa Miyako",
+     "code": "155065281",
+     "reward": "抽奖",
+     "subs": [],
+     "level": "推荐用车"
+    },
+    {
+     "type": "漂移区域",
+     "name": "滨海径走赛",
+     "car": "2021 Toyota(丰田) GR Yaris",
+     "note": "2025 丰田 Land Cruiser",
+     "tuner": "",
+     "code": "",
+     "reward": "抽奖",
+     "subs": [],
+     "level": "推荐用车"
+    },
+    {
+     "type": "拓荒者",
+     "name": "海岸下坡赛",
+     "car": "2025 Toyota(丰田) Land Cruiser",
+     "note": "车展购入 调校师：CaiGou YYY 调校代码：177892394",
+     "tuner": "CaiGou YYY",
+     "code": "177892394",
+     "reward": "抽奖",
+     "subs": [],
+     "level": "推荐用车"
+    },
+    {
+     "type": "Horizon Paly",
+     "name": "车款挑战！",
+     "car": "在规格赛中达成3次终极干净利落跑法技术",
+     "note": "在规格赛中达成3次终极干净利落跑法技术",
+     "tuner": "",
+     "code": "",
+     "reward": "Saleen S7 LM",
+     "subs": [],
+     "level": "无车辆限制"
+    },
+    {
+     "type": "每月劲敌",
+     "name": "曾尔环道",
+     "car": "驾驶马自达Furai完成一圈干净圈",
+     "note": "干净圈要求 无碰撞 无倒转 无自动驾驶",
+     "tuner": "",
+     "code": "",
+     "reward": "超级抽奖",
+     "subs": [],
+     "level": "无车辆限制"
+    },
+    {
+     "type": "每日挑战",
+     "name": "专注时间",
+     "car": "驾驶 2022 福特 Focus ST 赢得一场公路赛",
+     "note": "车展购入 调校师：MSR Sam 调校代码：143884749",
+     "tuner": "MSR Sam",
+     "code": "143884749",
+     "reward": "5,000点数",
+     "subs": [
+      {
+       "name": "地貌概览",
+       "text": "驾驶任意越野车辆行驶 5.0 英里"
+      },
+      {
+       "name": "社区出品",
+       "text": "游玩一次 EventLab 赛事"
+      },
+      {
+       "name": "吞金兽",
+       "text": "花费 10000 点数升级任意日本车辆"
+      },
+      {
+       "name": "大合照",
+       "text": "在嘉年华车友会拍摄一张你的爱车的照片"
+      },
+      {
+       "name": "寿司卷",
+       "text": "达成一次桶滚技术"
+      },
+      {
+       "name": "幸运尝试",
+       "text": "兑换一次抽奖或超级抽奖"
+      }
+     ],
+     "level": "推荐用车"
+    },
+    {
+     "type": "每周挑战",
+     "name": "挑战一",
+     "car": "拥有并驾驶 2024 Ram 1500 TRX",
+     "note": "车展购入 调校师：Noa Miyako 调校代码：102110675",
+     "tuner": "Noa Miyako",
+     "code": "102110675",
+     "reward": "25,000点数",
+     "subs": [
+      {
+       "name": "挑战二",
+       "text": "在危险标志累计获得3星等"
+      },
+      {
+       "name": "挑战三",
+       "text": "达成5次杰出破坏技术"
+      },
+      {
+       "name": "挑战四",
+       "text": "赢得一场越野赛"
+      }
+     ],
+     "level": "硬性指定车型"
+    }
+   ]
+  },
+  {
+   "title": "系列赛1 欢迎来到日本 冬季",
+   "date": "6月5 至 6月12日",
+   "hdr": 978,
+   "events": [
+    {
+     "type": "照片挑战",
+     "name": "完美投手",
+     "car": "在江户川棒球场中拍摄一张照片",
+     "note": "在江户川棒球场中拍摄一张照片",
+     "tuner": "",
+     "code": "",
+     "reward": "汽车喇叭奖励",
+     "subs": [],
+     "level": "品牌/条件限定"
+    },
+    {
+     "type": "收藏品",
+     "name": "零食突袭",
+     "car": "破坏5台自动售货机",
+     "note": "破坏5台自动售货机",
+     "tuner": "",
+     "code": "",
+     "reward": "莲花 Emira",
+     "subs": [],
+     "level": "无车辆限制"
+    },
+    {
+     "type": "季节锦标赛",
+     "name": "运动风度",
+     "car": "1985 丰田 Trueno GT APEX",
+     "note": "车展购入 调校师：MSR Sam 调校代码：649358159",
+     "tuner": "MSR Sam",
+     "code": "649358159",
+     "reward": "达特桑 2000",
+     "subs": [],
+     "level": "类别限定"
+    },
+    {
+     "type": "季节锦标赛",
+     "name": "入乡随俗",
+     "car": "2020 雪佛兰 Corvette Stingray Coupe",
+     "note": "车展购入 调校师：Noa Miyako 调校代码：901378277",
+     "tuner": "Noa Miyako",
+     "code": "901378277",
+     "reward": "法拉利 Roma",
+     "subs": [],
+     "level": "类别限定"
+    },
+    {
+     "type": "季节锦标赛",
+     "name": "泥地怪兽",
+     "car": "1986 名爵 Metro 6R4",
+     "note": "车展购入 调校师：lphanhan 调校代码：162328536",
+     "tuner": "lphanhan",
+     "code": "162328536",
+     "reward": "雷诺 8",
+     "subs": [],
+     "level": "类别限定"
+    },
+    {
+     "type": "危险标志",
+     "name": "高山高地",
+     "car": "2012 日产 GT-R Black Edition (R35)",
+     "note": "车展购入 调校师：MSR Sola 调校代码：627691796",
+     "tuner": "MSR Sola",
+     "code": "627691796",
+     "reward": "抽奖",
+     "subs": [],
+     "level": "推荐用车"
+    },
+    {
+     "type": "测速区间",
+     "name": "佛寺上坡",
+     "car": "2012 日产 GT-R Black Edition (R35)",
+     "note": "车展购入 调校师：MSR Sola 调校代码：627691796",
+     "tuner": "MSR Sola",
+     "code": "627691796",
+     "reward": "抽奖",
+     "subs": [],
+     "level": "推荐用车"
+    },
+    {
+     "type": "直线车友赛",
+     "name": "色川四分之一英里",
+     "car": "2012 日产 GT-R Black Edition (R35)",
+     "note": "车展购入 调校师：MSR Sola 调校代码：627691796",
+     "tuner": "MSR Sola",
+     "code": "627691796",
+     "reward": "抽奖",
+     "subs": [],
+     "level": "类别限定"
+    },
+    {
+     "type": "地平线漂移",
+     "name": "赛道传奇 漂移不停",
+     "car": "驾驶任意道奇汽车完成一场地平线漂移锦标赛",
+     "note": "无论输赢完成赛事即可",
+     "tuner": "",
+     "code": "",
+     "reward": "兰博基尼 Countach",
+     "subs": [],
+     "level": "无车辆限制"
+    },
+    {
+     "type": "淘汰之王",
+     "name": "大逃杀",
+     "car": "结束时取得第30名次或以上",
+     "note": "结束时取得第30名次或以上",
+     "tuner": "",
+     "code": "",
+     "reward": "莲花 Exige '18",
+     "subs": [],
+     "level": "无车辆限制"
+    },
+    {
+     "type": "每月劲敌",
+     "name": "曾尔环道",
+     "car": "驾驶马自达Furai完成一圈干净圈",
+     "note": "干净圈要求 无碰撞 无倒转 无自动驾驶",
+     "tuner": "",
+     "code": "",
+     "reward": "超级抽奖",
+     "subs": [],
+     "level": "无车辆限制"
+    },
+    {
+     "type": "每日挑战",
+     "name": "千灵千寻",
+     "car": "1991 本田 Beat",
+     "note": "车展购入 调校师：Noa Miyako 调校代码：111497699",
+     "tuner": "Noa Miyako",
+     "code": "111497699",
+     "reward": "5,000点数",
+     "subs": [
+      {
+       "name": "一鸣本田",
+       "text": "1991 本田 Beat"
+      },
+      {
+       "name": "爱心包裹",
+       "text": "向其他玩家发送礼物掉落箱"
+      },
+      {
+       "name": "精彩狂飙",
+       "text": "1991 本田 Beat"
+      },
+      {
+       "name": "一时兴起",
+       "text": "达成2次破坏铁球技术"
+      },
+      {
+       "name": "音速奔驰",
+       "text": "车速达到200英里/时"
+      },
+      {
+       "name": "重归正轨",
+       "text": "2001 讴歌 Integra Type R"
+      }
+     ],
+     "level": "推荐用车"
+    },
+    {
+     "type": "每周挑战",
+     "name": "挑战一",
+     "car": "拥有并驾驶 2020 宝马 M2 Competition Coupe",
+     "note": "车展购入 调校师：Noa Miyako 调校代码：728416813",
+     "tuner": "Noa Miyako",
+     "code": "728416813",
+     "reward": "25,000点数",
+     "subs": [
+      {
+       "name": "挑战二",
+       "text": "驾驶 2020 宝马 M2 Competition Coupe 在测速照相累计获得3星等"
+      },
+      {
+       "name": "挑战三",
+       "text": "拍摄一张你的2020 宝马 M2 Competition Coupe 的照片"
+      },
+      {
+       "name": "挑战四",
+       "text": "驾驶 2020 宝马 M2 Competition Coupe 在曾尔计时赛中完成3圈"
+      }
+     ],
+     "level": "硬性指定车型"
+    }
+   ]
+  },
+  {
+   "title": "系列赛1 欢迎来到日本 秋季",
+   "date": "5月29 至 6月5日",
+   "hdr": 1037,
+   "events": [
+    {
+     "type": "照片挑战",
+     "name": "#东京塔",
+     "car": "在东京塔底部拍照",
+     "note": "在东京塔底部拍照",
+     "tuner": "",
+     "code": "",
+     "reward": "极限竞速LINK奖励",
+     "subs": [],
+     "level": "品牌/条件限定"
+    },
+    {
+     "type": "寻宝游戏",
+     "name": "南野区",
+     "car": "跟随线索去发现宝藏",
+     "note": "南野区高尔夫球场 雪松竞速和鸣尾越野之间",
+     "tuner": "",
+     "code": "",
+     "reward": "100,000点数",
+     "subs": [],
+     "level": "无车辆限制"
+    },
+    {
+     "type": "季节锦标赛",
+     "name": "径走混合",
+     "car": "2006 三菱 Lancer Evolution IX MR ",
+     "note": "车展购入 调校师：MSR Sola 调校代码：154858655",
+     "tuner": "MSR Sola",
+     "code": "154858655",
+     "reward": "Schuppan 962CR",
+     "subs": [],
+     "level": "类别限定"
+    },
+    {
+     "type": "季节锦标赛",
+     "name": "宏伟家庭",
+     "car": "1989 日产 S-Cargo",
+     "note": "车展购入 调校师：MSR Sola 调校代码：152843294",
+     "tuner": "MSR Sola",
+     "code": "152843294",
+     "reward": "Abarth 695 '16",
+     "subs": [],
+     "level": "类别限定"
+    },
+    {
+     "type": "季节锦标赛",
+     "name": "乡村生活",
+     "car": "1989 日产 S-Cargo",
+     "note": "车展购入 调校师：FuzzyTexas81292 调校代码：503873451",
+     "tuner": "FuzzyTexas81292",
+     "code": "503873451",
+     "reward": "阿斯顿·马丁 DBX '21",
+     "subs": [],
+     "level": "类别限定"
+    },
+    {
+     "type": "危险标志",
+     "name": "高速公路飞越",
+     "car": "1991 本田 Beat",
+     "note": "车展购入 调校师：Noa Miyako 调校代码：111497699",
+     "tuner": "Noa Miyako",
+     "code": "111497699",
+     "reward": "抽奖",
+     "subs": [],
+     "level": "推荐用车"
+    },
+    {
+     "type": "测速区间",
+     "name": "森林直道",
+     "car": "1991 本田 Beat",
+     "note": "车展购入 调校师：Noa Miyako 调校代码：160271155",
+     "tuner": "Noa Miyako",
+     "code": "160271155",
+     "reward": "抽奖",
+     "subs": [],
+     "level": "推荐用车"
+    },
+    {
+     "type": "拓荒者",
+     "name": "势均力敌",
+     "car": "1991 本田 Beat",
+     "note": "车展购入 调校师：Noa Miyako 调校代码：111497699",
+     "tuner": "Noa Miyako",
+     "code": "111497699",
+     "reward": "抽奖",
+     "subs": [],
+     "level": "推荐用车"
+    },
+    {
+     "type": "季节打工",
+     "name": "东京送餐",
+     "car": "完成一轮班次东京送餐打工",
+     "note": "完成三次送餐为一轮班次",
+     "tuner": "",
+     "code": "",
+     "reward": "日产 Be1 '87",
+     "subs": [],
+     "level": "无车辆限制"
+    },
+    {
+     "type": "峠道对决",
+     "name": "山道自达",
+     "car": "任意马自达车型完成一场线上峠道对决",
+     "note": "无论输赢完成赛事即可",
+     "tuner": "",
+     "code": "",
+     "reward": "Huracan EVO",
+     "subs": [],
+     "level": "无车辆限制"
+    },
+    {
+     "type": "每月劲敌",
+     "name": "曾尔环道",
+     "car": "驾驶马自达Furai完成一圈干净圈",
+     "note": "干净圈要求 无碰撞 无倒转 无自动驾驶",
+     "tuner": "",
+     "code": "",
+     "reward": "超级抽奖",
+     "subs": [],
+     "level": "无车辆限制"
+    }
+   ]
+  }
+ ]
+}
