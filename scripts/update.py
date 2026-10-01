@@ -106,6 +106,9 @@ def main():
     # ── 2) 构建 ──
     if not quiet:
         print("—— 生成页面 ——")
+    if no_fetch:
+        # 构建阶段会取车型目录；--no-fetch 时连它也不去碰网络
+        os.environ["FH6_OFFLINE"] = "1"
     import fh6_build
     out_html = fh6_build.main()
 

@@ -1,10 +1,10 @@
 <!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>地平线 6 · 调校速查（本周赛事 / 季节赛限定车 / 各模式车辆榜）</title>
-<meta name="description" content="极限竞速：地平线6 调校速查 —— 当周季节赛事的游戏内车辆限制原文、推荐车与 9 位调校码，18 周季节赛限定车历史，14 个组别的各模式车辆榜。数据逐周自动更新。">
+<title>地平线 6 · 本周值不值得做（附调校速查）</title>
+<meta name="description" content="极限竞速：地平线6 —— 本周季节赛值不值得做：奖励车是否车展买不到、稀有度、车展价，并可在本地读取存档比对；附当周活动限制原文、推荐车与 9 位调校码。">
 <meta name="theme-color" content="#0d6c54">
 <meta property="og:title" content="地平线 6 · 调校速查">
-<meta property="og:description" content="当周赛事限制原文 + 推荐车 + 调校码 · 季节赛限定车 · 各模式车辆榜">
+<meta property="og:description" content="本周季节赛值不值得做（奖励车是否买不到） + 当周限制原文与调校码">
 <meta property="og:type" content="website">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230d6c54'/%3E%3Ctext x='32' y='46' font-family='system-ui,sans-serif' font-size='40' font-weight='700' fill='%23ffffff' text-anchor='middle'%3E6%3C/text%3E%3C/svg%3E">
 <style>
@@ -73,6 +73,40 @@ td.cen{text-align:center;font-weight:600;color:#0a5742}
 .notes b{color:var(--tx)}
 .toast{position:fixed;left:50%;bottom:34px;transform:translateX(-50%) translateY(20px);background:#1b2027;color:#fff;padding:9px 18px;border-radius:9px;font-size:13px;opacity:0;pointer-events:none;transition:.22s}
 .toast.on{opacity:1;transform:translateX(-50%) translateY(0)}
+/* ── ⓪ 本周值不值得做 ── */
+.vsum{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 18px;margin-bottom:12px;display:flex;gap:14px;align-items:flex-start;flex-wrap:wrap}
+.vsum .vbig{font-size:19px;font-weight:700;line-height:1.3}
+.vsum .vwhy{color:var(--tx2);font-size:13px;flex:1 1 240px;min-width:200px}
+.v3{border-left:5px solid #b32d2d}.v2{border-left:5px solid #a3600a}
+.v1{border-left:5px solid #7b8494}.v0{border-left:5px solid #d7dbe0}
+.rgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(318px,1fr));gap:10px;margin-top:10px}
+.rc{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 14px}
+.rc.v3{border-left:5px solid #b32d2d}.rc.v2{border-left:5px solid #a3600a}
+.rc.v1{border-left:5px solid #98a1af}.rc.v0{border-left:5px solid #d7dbe0;opacity:.75}
+.rc h4{margin:0;font-size:15px}
+.rhead{display:flex;align-items:baseline;gap:8px;flex-wrap:wrap}
+.stars{color:#d1891b;font-size:13px;letter-spacing:1px;white-space:nowrap}
+.pill{font-size:11px;padding:2px 8px;border-radius:20px;font-weight:600;white-space:nowrap}
+.pill.no{background:#fdecec;color:#b32d2d}
+.pill.yes{background:#f0f1f3;color:#7b8494}
+.pill.unk{background:#f2ecfe;color:#6d34d6}
+.rmeta{margin-top:7px;display:flex;gap:6px;flex-wrap:wrap;font-size:12.5px;color:var(--tx2)}
+.rmeta span{background:#f3f5f8;border-radius:6px;padding:2px 8px}
+.rwhy{margin-top:7px;font-size:12.5px;color:#7a4700;background:#fff8e8;border-radius:7px;padding:6px 9px}
+.rev{margin-top:6px;font-size:12px;color:var(--tx2)}
+.own{margin-top:7px;font-size:12.5px;font-weight:600}
+.own.y{color:#0a5742}.own.n{color:#98a1af}
+.btn{font:600 13px/1 inherit;padding:9px 16px;border-radius:9px;border:1px solid var(--line);background:var(--card);color:var(--tx);cursor:pointer}
+.btn.pri{background:var(--acc);border-color:var(--acc);color:#fff}
+.btn:hover{border-color:#c3cad3}
+.cnt{font-size:12.5px;color:var(--tx2);margin-left:2px}
+.scan{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin:10px 0 4px;font-size:13px;display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.scan .warn{color:#8a6d1f;background:#fffdf3;border-radius:8px;padding:8px 11px;font-size:12.5px;flex:1 1 100%;margin:0}
+.scan .kv{display:flex;gap:16px;flex-wrap:wrap}
+.scan .kv b{font-size:16px;display:block}
+.scan .kv span{font-size:11.5px;color:var(--tx2)}
+.tags{display:flex;gap:5px;flex-wrap:wrap;margin-top:8px}
+.tag2{font-size:11.5px;background:#eef7f3;color:#0a5742;border-radius:6px;padding:2px 7px}
 /* ── 移动端适配 ── */
 @media (max-width:720px){
 .wrap{padding:14px 12px 56px}
@@ -81,11 +115,13 @@ header.top h1{font-size:19px;line-height:1.35}
 header.top p{font-size:12px}
 .kpis{gap:14px 20px;margin-top:12px}
 .kpi b{font-size:18px}
-.tabs{position:sticky;top:0;z-index:20;background:var(--bg);gap:6px;padding:9px 0;margin:8px 0;display:grid;grid-template-columns:repeat(3,1fr)}
-.tabs button{width:100%;padding:10px 4px;font-size:13px;text-align:center;white-space:nowrap}
+.tabs{position:sticky;top:0;z-index:20;background:var(--bg);gap:6px;padding:9px 0;margin:8px 0;display:grid;grid-template-columns:repeat(2,1fr)}
+.tabs button{width:100%;padding:10px 6px;font-size:12.5px;text-align:center;white-space:nowrap}
 .tl{display:none}
 .curbar{padding:11px 13px;gap:9px;margin-bottom:10px}
 .evgrid{grid-template-columns:1fr;gap:9px}
+.rgrid{grid-template-columns:1fr;gap:9px}
+.vsum{padding:12px 14px}.vsum .vbig{font-size:17px}
 .ev{padding:12px 13px}
 .cdwrap{margin-left:0;width:100%}
 .limit{margin:8px 0 6px;padding:7px 9px;font-size:12.5px}
@@ -109,24 +145,30 @@ th,td{padding:6px 7px}
 }
 </style></head><body><div class="wrap">
 <header class="top">
-  <h1>地平线 6 · 调校速查</h1>
-  <p>当周赛事的<b>游戏内限制原文</b> + 推荐车 + 调校码 · 季节赛限定车 · 各模式车辆榜<br>
-     数据逐格解出社区维护表，并交叉核对中文／英文攻略 · 单文件离线可用</p>
+  <h1>地平线 6 · 本周值不值得做</h1>
+  <p>本周奖励车<b>是否车展买不到</b> · 稀有度 · 车展价 · 可在本地读存档比对「我有没有」<br>
+     附：当周赛事限制原文 + 推荐车 + 调校码 · 季节赛限定车 · 各模式车辆榜 · 单文件离线可用</p>
   <div class="kpis">
+    <div class="kpi"><b>4</b><span>本周奖励车（0 台买不到）</span></div>
     <div class="kpi"><b>14</b><span>当周活动条目</span></div>
     <div class="kpi"><b>18</b><span>个赛季周（含历史）</span></div>
     <div class="kpi"><b>660</b><span>台各模式上榜车</span></div>
-    <div class="kpi"><b>2026-09-29 11:12</b><span>数据快照时间</span></div>
+    <div class="kpi"><b>2026-10-01 16:57</b><span>数据快照时间</span></div>
   </div>
 </header>
 <div id="tabanchor"></div>
 <div class="tabs">
-  <button class="on" data-p="p1">① 本周赛事<span class="tl">（含限制原文）</span></button>
+  <button class="on" data-p="p0">⓪ 值不值得做<span class="tl">（本周奖励）</span></button>
+  <button data-p="p1">① 本周赛事<span class="tl">（含限制原文）</span></button>
   <button data-p="p2">② 季节赛限定车<span class="tl">（18 周历史）</span></button>
   <button data-p="p3">③ 各模式车辆榜</button>
 </div>
 
-<div class="pane on" id="p1">
+<div class="pane on" id="p0">
+<div class='curbar'><b>极限竞速：地平线 6 - S5 冬季 季节赛事活动内容和攻略</b><span class='tag'>本周</span><span class='dt'>2026年9月24日-10月1日</span><span class='dt'>· 季节每周四晚 22:30（北京时间）更新</span></div><div class='vsum v2' id='vsum'><div class='vbig'>可以做，但不是刚需</div><div class='vwhy'>本周 4 台奖励车<b>车展都能买到</b>，但档位／价位不低（传奇或百万级），顺手做掉等于白拿一笔、不做也不亏。</div></div><div class='bar'><input id='q0' placeholder='搜索奖励车 / 活动名 …'><span id='c0' class='cnt'></span><button class='btn pri' id='scan-pick'>读存档 · 本地比对</button><input type='file' id='scan-file' webkitdirectory directory multiple hidden></div><div class='scan' id='scan' hidden><div id='scan-out'></div></div><div class='rgrid'><article class='rc v2' data-cid='2147' data-txt='mg metro 6r4mg metro 6r4 - 1986 年冬季拉力 | 泥地赛' data-star='2' data-tag='能买到'><div class='rhead'><span class='stars'>★★☆</span><span class='pill yes'>能买到</span></div><h4>MG Metro 6R4</h4><div class='rmeta'><span>传奇</span><span>车展／抽奖／剧情</span><span>车展价 220,000 CR</span></div><div class='rwhy'>传奇，车展可直购（220,000 CR）</div><div class='rev'>来自：终极考验 · 冬季拉力 | 泥地赛</div></article><article class='rc v2' data-cid='2987' data-txt='peel p50peel p50 - 1962 年极速连接' data-star='2' data-tag='能买到'><div class='rhead'><span class='stars'>★★☆</span><span class='pill yes'>能买到</span></div><h4>Peel P50</h4><div class='rmeta'><span>传奇</span><span>车展／抽奖</span><span>车展价 21,000 CR</span></div><div class='rwhy'>传奇，车展可直购（21,000 CR）</div><div class='rev'>来自：地平线乐玩 · 极速连接</div></article><article class='rc v2' data-cid='3055' data-txt='捷豹 c-x75捷豹 c-x75 - 2010 年（每周挑战所需）乡村皮卡 | 越野赛' data-star='2' data-tag='能买到'><div class='rhead'><span class='stars'>★★☆</span><span class='pill yes'>能买到</span></div><h4>捷豹 C-X75</h4><div class='rmeta'><span>传奇</span><span>车展／抽奖</span><span>车展价 3,200,000 CR</span></div><div class='rwhy'>传奇，车展可直购（3,200,000 CR），白拿省一大笔</div><div class='rev'>来自：季节锦标赛 · 乡村皮卡 | 越野赛</div></article><article class='rc v1' data-cid='2563' data-txt='reliant supervanreliant supervan iii - 1972 年神车炸街 | 街头赛' data-star='1' data-tag='能买到'><div class='rhead'><span class='stars'>★☆☆</span><span class='pill yes'>能买到</span></div><h4>Reliant Supervan</h4><div class='rmeta'><span>普通</span><span>车展／抽奖</span><span>车展价 39,000 CR</span></div><div class='rwhy'>普通，车展可直购（39,000 CR）</div><div class='rev'>来自：季节锦标赛 · 神车炸街 | 街头赛</div></article></div><details class='sec'><summary>本周其余活动（奖励不是车）<span class='wkstat'>10 项</span></summary><div class='tw'><table><thead><tr><th>类型</th><th>活动</th><th>奖励</th></tr></thead><tbody><tr><td class='k'>每周挑战</td><td class='nm'>捷豹探险家</td><td class='rw'>25,000 CR 点数</td></tr><tr><td class='k'>漂移冲分赛</td><td class='nm'>霜山漂移冲分赛</td><td class='rw'>抽奖</td></tr><tr><td class='k'>危险标志</td><td class='nm'>蔚蓝俯冲</td><td class='rw'>抽奖</td></tr><tr><td class='k'>测速区间</td><td class='nm'>高大树木</td><td class='rw'>抽奖</td></tr><tr><td class='k'>拓荒者门</td><td class='nm'>石部海上桥</td><td class='rw'>抽奖</td></tr><tr><td class='k'>照片挑战</td><td class='nm'>香车雅竹</td><td class='rw'>表情 - 空手道大师</td></tr><tr><td class='k'>寻宝游戏</td><td class='nm'>霜山区</td><td class='rw'>100,000 CR</td></tr><tr><td class='k'>每日挑战</td><td class='nm'>7 天挑战</td><td class='rw'>每个任务 5,000 CR 点数</td></tr><tr><td class='k'>每月劲敌</td><td class='nm'>霜山冲刺赛</td><td class='rw'>超级抽奖</td></tr><tr><td class='k'>地平线特技派对</td><td class='nm'>迷你游戏</td><td class='rw'>服装 - 红黑工装裤</td></tr></tbody></table></div></details><details class='sec'><summary>判据是怎么定的 · 以及哪里可能不准</summary><div class='notes' style='border:none;margin:0;border-radius:0'><ul><li><b>第一判据「买不到」</b>：看这台车的获取途径里有没有「车展」。没有 = 买不到。三星＝只能靠季节赛事 / 车房宝物 / 秘藏座驾；两星＝车展买不到，或档位是传奇 / 极限竞速特别版；一星＝车展随时能买。</li><li><b>第二判据「我没有」</b>：<b>本页不读加密内容</b>。FH6 的完整车库清单在存档 <code>C_ProfileData</code> 里且是加密的，社区没有公开解密实现。本页只读存档里两处不加密的地方——顶层摘要里写明的车库车辆总数，以及 <code>Livery_&lt;序号&gt;</code> / <code>Tuning_&lt;序号&gt;</code> 目录名里的车辆序号。所以它只能确认<b>您涂装过或调校过的车</b>；其余标「未见」，而<b>「未见」不等于没有</b>。</li><li><b>可能不准的地方</b>：获取途径来自社区整理，游戏版本更新后可能变；奖励车名是从攻略文案里抽的，个别会有笔误（比如把 Dino 写成 Dion），这类词本页会标「未能定位」而不是硬凑一个。</li></ul></div></details>
+</div>
+
+<div class="pane" id="p1">
   <div class="curbar">
     <b>S5 英国汽车 冬季</b><span class="tag">当周有效</span><span class="dt">2026年9月24日-10月1日</span>
     <span class="dt">· 季节每周四晚 22:30（北京时间）更新</span>
@@ -160,6 +202,16 @@ Limited Edition</td><td class='cen'>2</td><td class='car'>拓荒者门、测速�
 <div class="notes">
   <h3>怎么用这份表</h3>
   <ul>
+    <li><b>⓪ 值不值得做</b>：先看<b>「买不到」</b>——那台车的获取途径里没有「车展」，
+        也就是这周不拿、之后就得靠抽奖碰运气或等复刻。三颗星＝只能靠季节赛事/车房宝物/秘藏座驾拿到；
+        两颗星＝车展买不到或档位很高（传奇／极限竞速特别版）；一颗星＝车展随时能买，不急。</li>
+    <li><b>「我有没有」这一列怎么来的</b>：FH6 的完整车库清单在存档里是<b>加密</b>的，
+        社区目前没有公开的解密实现，所以这一列<b>不读加密内容</b>。它读的是存档里两处不加密的地方——
+        顶层的存档摘要（写明了车库车辆总数）与 <code>Livery_&lt;序号&gt;/Tuning_&lt;序号&gt;</code> 目录名。
+        因此它只能标出<b>您涂装过或调校过的车</b>，其余显示「未见」——「未见」<b>不等于没有</b>，只是这份存档没提供证据。</li>
+    <li><b>读档会改变结论</b>：存档里确认您已经有的奖励车，星级会<b>下调</b>（已有的重复车不太值得再跑一趟）；
+        「未见」的车<b>不做任何上调</b>——因为「未见」不等于没有。顶部那句结论会跟着重算。</li>
+    <li>存档全程在您浏览器内读取，<b>不上传任何内容</b>，也不写入存档目录。</li>
     <li><b>① 本周赛事</b>里每张卡片的黄色块是<b>游戏内的限制原文</b>（如「皮卡和四轮驱动车 · B 600」），
         照它选车就不会被拦在赛外；蓝色「推荐」徽标来自中文／英文攻略实测验证过的调校师。</li>
     <li><b>红色「必须用」</b>＝每周挑战，必须拥有并驾驶指定那一台车（通常是 4 个步骤按顺序做完）。</li>
@@ -177,10 +229,14 @@ Limited Edition</td><td class='cen'>2</td><td class='car'>拓荒者门、测速�
         两者给的推荐车不同，属于不同调校师的方案，均可用。</li>
     <li><b>季节赛限定车 / 各模式车辆榜</b>：腾讯文档「地平线6线上车辆调校推荐」，逐格解出（非抄录）。</li>
     <li>原表个别单元格有笔误（如「调教代码」、日期漏「日」字、某周日期区间偏长），本页按原样保留，未做臆改。</li>
-    <li>数据快照：2026-09-29 11:12　·　页面由 <code>scripts/update.py</code> 自动生成。</li>
+    <li><b>奖励车的稀有度与获取途径</b>：社区库 Nova's Autoshow（<a href="https://forza.nerdyderg.com" target="_blank" rel="noopener">forza.nerdyderg.com</a>）；
+        中文车名与车辆序号取自 B站小玩具「地平线六车辆数据库」（作者 Dr.Hydra）。两者均非官方数据。</li>
+    <li>「奖励车是不是车展买不到」是按获取途径字段判断的，<b>游戏版本更新后可能变化</b>；以游戏内「车展」实际是否在售为准。</li>
+    <li>数据快照：2026-10-01 16:57　·　页面由 <code>scripts/update.py</code> 自动生成。</li>
   </ul>
 </div>
 </div><div class="toast" id="toast">已复制</div>
+<script>window.__CAT__={"247": "丰田 2000GT", "249": "法拉利 250 GTO", "251": "梅赛德斯-奔驰 300SL", "253": "法拉利 F355", "255": "法拉利 512TR", "260": "911 Carrera '73", "261": "911 GT2 '95", "262": "911 GT3 '04", "265": "911 Turbo '82", "268": "保时捷 944", "269": "保时捷 959", "278": "Vaux Astra '06", "281": "Barracuda", "289": "雪佛兰 Camaro '69", "292": "保时捷 Carrera", "295": "丰田 Celica '03", "296": "TVR Speed 12", "299": "Chevelle '70", "302": "本田 Civic '04", "306": "Shelby Cobra 427", "309": "大众 Corrado", "312": "Corvette '67", "314": "Corvette '02", "315": "Corvette '70", "316": "兰博基尼 Countach", "320": "本田 CR-X", "323": "蓝旗亚 Delta", "324": "Diablo GTR", "325": "兰博基尼 Diablo SV", "326": "法拉利 Dino", "327": "Eclipse GSX", "333": "法拉利 Enzo", "335": "莲花 Esprit", "336": "捷豹 E-type", "338": "迈凯伦 F1 GT", "340": "法拉利 F40", "342": "法拉利 F50", "343": "Fairlady Z '69", "344": "Fairlady Z '03", "345": "Fairlady Z '94", "348": "福特 GT '05", "353": "大众 GTi Mk2 '92", "357": "三菱 GTO", "358": "法拉利 288 GTO", "363": "斯巴鲁 22B '98", "364": "斯巴鲁 WRX '04", "365": "斯巴鲁 WRX '05", "368": "讴歌 Integra", "374": "Lancer MR '06", "378": "Lancer MR '04", "379": "斯巴鲁 LEGACY", "382": "宝马 M3 '97", "383": "宝马 M3 '05", "391": "玛莎拉蒂 MC12", "398": "丰田 MR2 '95", "405": "福特 Mustang '00", "411": "本田 NSX-R '05", "412": "本田 NSX-R '92", "417": "别克 Regal GNX", "419": "奥迪 RS 4 '06", "420": "奥迪 RS 6 '03", "422": "讴歌 RSX", "423": "马自达 RX-7 '90", "427": "本田 S2000", "433": "TVR Sagaris", "440": "Silvia '94", "455": "丰田 Trueno", "458": "蓝旗亚 Stratos", "460": "丰田 Supra '92", "461": "丰田 Supra '98", "483": "道奇 Viper '99", "489": "捷豹 XJ220", "513": "道奇 Charger 69", "567": "日产 R390", "568": "梅赛德斯-奔驰 CLK-GTR", "569": "本田 NSX-R GT", "615": "标致 207 S", "625": "本田 Civic '07", "633": "奥迪 quattro", "634": "雷诺 5 Turbo", "637": "兰博基尼 Miura", "639": "Challenger '70", "641": "保时捷 911 GT1", "1006": "法拉利 FXX", "1007": "科尼塞格 CCGT", "1009": "Lancer GSR '08", "1011": "宝马 M3 '08", "1020": "法拉利 F50 GT", "1022": "法拉利 430 S", "1023": "法拉利 F40 C", "1032": "阿尔法·罗密欧 8C", "1034": "丰田 Celica '94", "1040": "宝马 M1", "1041": "福特 Mustang '93", "1042": "日产 GT-R '71", "1045": "庞蒂亚克 T/A '87", "1046": "道奇 Viper '08", "1052": "道奇 Ram SRT-10", "1059": "宝马 Z4 '08", "1060": "斯巴鲁 WRX '08", "1063": "Charger Daytona", "1064": "雪佛兰 Camaro '79", "1069": "Corvette '09", "1086": "福特 Focus '09", "1090": "梅赛德斯-奔驰 SL65", "1093": "Corvette '60", "1103": "日产 370Z", "1104": "达特桑 510", "1105": "阿斯顿·马丁 DB5", "1108": "福特 RS200", "1110": "马自达 MX-5 '94", "1124": "Abarth 131", "1126": "宝马 M5 '09", "1130": "迈凯伦 12C", "1131": "法拉利 458", "1150": "阿尔法·罗密欧 GTA", "1155": "Shelby Daytona", "1171": "法拉利 599XX", "1173": "兰博基尼 Murciélago", "1175": "帕加尼 Zonda R", "1184": "奥迪 RS 6 '09", "1200": "奥迪 R8 LMS", "1204": "Megane RS 250", "1215": "NULL CAR", "1216": "奥迪 RS 3", "1220": "奥迪 TT RS", "1221": "马自达 3", "1229": "马自达 Furai", "1231": "大众 Golf R '10", "1253": "Noble M600", "1260": "雷克萨斯 LFA", "1269": "宝马 2002 Turbo", "1270": "DeLorean DMC-12", "1272": "福特 Escort '92", "1273": "本田 Civic '97", "1276": "庞蒂亚克 T/A '77", "1277": "Plymouth Cuda", "1278": "福特 XB Falcon", "1282": "日产 240SX '93", "1283": "福特 T-Bird '57", "1291": "雪佛兰 El Camino", "1293": "福特 RS500", "1294": "GMC Syclone", "1295": "蓝旗亚 037", "1296": "梅赛德斯-奔驰 190 E '90", "1297": "Starion ESI-R", "1299": "沃尔沃 242 Turbo", "1300": "雪佛兰 Impala", "1301": "捷豹 D-Type", "1314": "迈凯伦 F1", "1323": "斯巴鲁 WRX '11", "1330": "雪佛兰 Camaro '70", "1332": "道奇 Dart '68", "1335": "#55 马自达 787B", "1350": "宝马 X5 M", "1352": "道奇 Super Bee", "1355": "福特 Mustang '65", "1367": "宝马 M5 '03", "1368": "宝马 M5 '88", "1369": "帕加尼 Zonda C", "1376": "莲花 Elise '99", "1379": "雪佛兰 Impala '96", "1381": "Galant VR-4", "1382": "斯巴鲁 LEGACY RS", "1388": "宝马 M5 '12", "1392": "兰博基尼 Sesto", "1393": "阿尔法·罗密欧 155", "1394": "GMC Typhoon", "1395": "丰田 MR2 '89", "1397": "科尼塞格 Agera", "1398": "Aventador '12", "1417": "奥迪 RS 5", "1418": "宝马 M5 '95", "1426": "马自达 RX-8", "1428": "大众 Scirocco '11", "1429": "雪佛兰 Nova '69", "1435": "大众 Beetle", "1459": "雪佛兰 Bel Air", "1477": "福特 Transit SSV", "1478": "#2 奥迪 S1", "1480": "马自达 RX-7 '85", "1481": "3000 MKIII", "1493": "宝马 850CSi", "1500": "梅赛德斯-奔驰 C63", "1513": "玛莎拉蒂 Ghibli '97", "1514": "马自达 RX-3", "1517": "丰田 Celica'92", "1522": "Jeep Wrangler", "1529": "福特 Capri MkI", "1532": "Venom GT", "1533": "Holden Torana", "1534": "捷豹 XJ-S", "1537": "丰田 Corolla", "1549": "阿尔法·罗密欧 33S", "1559": "梅赛德斯-奔驰 300 SLR", "1562": "SRT Viper '13", "1564": "Corvette '53", "1568": "本田 Civic '74", "1575": "雪佛兰 MonteCarlo", "1578": "法拉利 250 GT", "1586": "Continental '62", "1587": "马自达 Cosmo", "1591": "标致 205 T16", "1592": "丰田 Celica 74", "1598": "宝马 E92 M3 GTS", "1599": "法拉利 599XX E", "1601": "Gallardo Spyder", "1607": "奥迪 RS 4 '13", "1627": "梅赛德斯-奔驰 G 65", "1650": "本田 Civic '86", "1651": "Ariel Atom", "1654": "福特 Mustang '13", "1655": "斯巴鲁 BRZ", "1658": "梅赛德斯-奔驰 A45", "1661": "蓝旗亚 Delta S4", "1662": "MINI '65", "1667": "迈凯伦 P1", "1668": "福特 Mustang '69", "2002": "日产 GT-R '12", "2003": "MINI JCW '12", "2004": "马自达 MX-5 '13", "2006": "Corvette '95", "2007": "丰田 86", "2009": "奥迪 RS 7", "2010": "奥迪 R8 '13", "2017": "Abarth 595 '68", "2019": "福特 Focus '03", "2034": "LaFerrari", "2038": "阿尔法·罗密欧 4C", "2040": "BAC Mono", "2042": "兰博基尼 Veneno", "2119": "本田 Civic '84", "2121": "本田 Prelude 94", "2128": "凯迪拉克 Limo", "2131": "HSV GEN-F GTS", "2133": "宝马 i8", "2140": "斯巴鲁 BRAT", "2142": "大众 Golf R '14", "2145": "福特 Ranger T6", "2147": "MG Metro 6R4", "2148": "MINI X-Raid", "2149": "雷诺 Clio '93", "2151": "大众 Type 2", "2154": "宝马 M4 '14", "2161": "阿尔法·罗密欧 TZ2", "2163": "本田 Civic '16", "2164": "兰博基尼 Huracán", "2168": "斯巴鲁 WRX '15", "2171": "马自达 MX-5 '05", "2175": "雷克萨斯 RC F", "2177": "Corvette '15", "2178": "奥迪 RS 4 '01", "2179": "奥迪 S1", "2180": "奥迪 RS 6 '15", "2183": "雪佛兰 Camaro '15", "2184": "法拉利 458 S", "2188": "科尼塞格 One", "2205": "本田 S800", "2216": "Plymouth Fury", "2217": "斯巴鲁 SVX", "2235": "捷豹 XKR-S '15", "2242": "梅赛德斯-奔驰 AMG GT", "2262": "凯迪拉克 ATS-V", "2263": "Challenger '15", "2267": "马自达 MX-5 '16", "2270": "日产 GT-R '73", "2272": "达特桑 2000", "2290": "保时捷 918", "2297": "911 GT3 RS4 '12", "2357": "福特 Focus '17", "2363": "福特 GT '17", "2371": "法拉利 FXX K", "2372": "福特 Coupe '32", "2400": "福特 GT350R '16", "2412": "宝马 Isetta", "2416": "Meyers Manx", "2420": "欧宝 Manta 400", "2421": "凯迪拉克 CTS-V '16", "2422": "HSV Maloo '14", "2430": "Ariel Nomad", "2467": "法拉利 488 GTB", "2468": "道奇 Charger 15", "2469": "Sports 800 '65", "2470": "阿斯顿·马丁 Vulcan", "2471": "梅赛德斯-奔驰 AMG C 63 '16", "2472": "迈凯伦 570S", "2473": "奥迪 R8 V10 plus", "2486": "Radical RXC", "2489": "Abarth 695 '16", "2494": "Range Rover '15", "2507": "雪佛兰 150 Sedan", "2512": "日产 GT-R '87", "2515": "Penhall Cholla", "2517": "#11 福特 F-150", "2526": "Regera", "2527": "阿斯顿·马丁 DB11", "2534": "保时捷 968", "2535": "保时捷 928 GTS", "2542": "阿尔法·罗密欧 Giulia '17", "2544": "道奇 Viper '16", "2549": "保时捷 917 LH", "2551": "福特 Ute '14", "2552": "Alumi Craft C.10", "2563": "Reliant Supervan", "2566": "丰田 FJ40", "2568": "大众 Class 5 Bug", "2569": "Ultima 1020", "2574": "M12S Warthog CST", "2577": "法拉利 F12tdf", "2613": "GMC K5 Jimmy", "2614": "福特 Mustang '68", "2616": "兰博基尼 Centenario", "2618": "日产 GT-R '17", "2625": "宾利 Bentayga", "2628": "宝马 M4 '16", "2636": "#1 丰田 T100", "2647": "帕加尼 Huayra BC", "2649": "Crown Victoria", "2652": "Montero Evo", "2654": "梅赛德斯-奔驰 AMG GTR", "2659": "Silvia '98", "2663": "#37 Pro 2 Truck", "2711": "马自达 Traffic", "2712": "Galant Traffic", "2713": "Box Traffic", "2714": "Bus Traffic", "2738": "日产 GT-R '95", "2739": "雪佛兰 Camaro '17", "2740": "Abarth 124 '17", "2742": "Jeep Trailcat", "2743": "丰田 AT37", "2745": "本田 Trophy '15", "2755": "911 GT2 RS '18", "2773": "保时捷 Cayenne", "2792": "#2 福特 GT40", "2793": "#24 法拉利 P4", "2794": "保时捷 911 Turbo '93", "2801": "日产 #11 Skyline", "2822": "日产 Safari", "2825": "莲花 Elise GT1", "2841": "Jeep Trackhawk", "2866": "Exocet '18", "2870": "本田 Civic '18", "2871": "Can-Am Maverick", "2872": "Veloster N", "2902": "Flatbed Traffic", "2903": "Legacy Traffic", "2909": "道奇 SRT Demon", "2910": "Agera RS", "2935": "Funco F9", "2937": "#14 福特 Fiesta", "2968": "阿斯顿·马丁 Valkyrie", "2974": "法拉利 812", "2986": "梅赛德斯-奔驰 Unimog", "2987": "Peel P50", "2992": "捷豹 LW E-Type", "2993": "TVR Griffith", "2995": "大众 Golf GTI '83", "2996": "#13 福特 Mustang", "2997": "#530 HSV Maloo", "3000": "#777 日产 240", "3003": "#43 道奇 Viper", "3007": "#34 大众 Beetle", "3031": "#185 保时捷 959", "3035": "KTM X-Bow GT4", "3037": "#98 宝马 325i", "3051": "福特 Fiesta RS", "3055": "捷豹 C-X75", "3062": "法拉利 512 S", "3063": "梅赛德斯-奔驰 X-Class", "3064": "梅赛德斯-奔驰 GT 4 '18", "3072": "911 GT3 RS '19", "3082": "MC12 Corsa '08", "3087": "650S Spider", "3088": "Silverado DD", "3091": "阿斯顿·马丁 Vantage '19", "3107": "梅赛德斯-奔驰 G 63 6x6", "3108": "福特 Mustang S5", "3110": "Jeep Wrangler DD", "3117": "保时捷 718 GTS", "3118": "Corvette '19", "3120": "Urus '19", "3123": "保时捷 911 '19", "3128": "#25 福特 Bronco", "3129": "Mégane R26.R", "3132": "MINI JCW Buggy", "3134": "Megane R.S. '18", "3141": "Apollo IE '19", "3149": "雪佛兰 Camaro '18", "3153": "迈凯伦 600LT", "3156": "Speedtail '19", "3170": "福特 Supervan 3", "3173": "宝马 Z4 '19", "3176": "AMG Hammer Coupe", "3180": "标致 205 R", "3184": "#5 Escort '77", "3185": "阿斯顿·马丁 DBS SL '19", "3187": "保时捷 Macan RR", "3189": "VelociRaptor '19", "3190": "福特 Lightning", "3198": "Pantera GT5", "3211": "阿斯顿·马丁 Vulcan AMR", "3212": "Zenvo TSR-S", "3214": "#70 保时捷 935", "3225": "Portofino '18", "3226": "法拉利 J50 '17", "3227": "488 Pista '19", "3228": "福特 Racing Puma", "3232": "#777 Corvette", "3235": "大众 Pickup '82", "3241": "斯巴鲁 STI ARX", "3249": "Formula D 599", "3250": "梅赛德斯-AMG E63", "3255": "Jeep JT", "3257": "日产 Pulsar", "3277": "福特 GT500 '20", "3282": "#203 保时捷 961", "3287": "捷豹 XJR-15", "3288": "Schuppan 962CR", "3289": "Aventador SVJ", "3293": "捷豹 XJ220S", "3304": "阿尔法 SE 048SP", "3307": "日产 370Z '19", "3311": "法拉利 FXX-K E", "3312": "法拉利 Monza", "3315": "科尼塞格 Jesko", "3318": "RS 4 Avant '18", "3325": "Aston DB7 GT", "3359": "奥迪 RS e-tron", "3363": "日产 #23 GT-R", "3364": "Valhalla Concept", "3367": "F8 Tributo '19", "3369": "Corvette C8 '20", "3371": "Huracán EVO", "3373": "丰田 4Runner", "3374": "丰田 Tacoma", "3395": "雷诺 8", "3400": "#99 马自达 RX-8", "3402": "丰田 Supra '20", "3404": "#2069 Bronco R", "3411": "#34 丰田 Supra", "3412": "斯巴鲁 STI S209", "3413": "大众 Golf R '21", "3414": "路虎 Defender '20", "3429": "Ginetta G40 Jr", "3434": "宝马 M2 Comp", "3439": "DeBerti F-250", "3441": "DD Tacoma TRD", "3445": "保时捷 Taycan S", "3449": "莲花 Evija '20", "3454": "奥迪 RS 3 '20", "3476": "福特 SD F-450", "3477": "雪佛兰 Trail Boss", "3482": "迈凯伦 765 '21", "3486": "Wrangler T", "3494": "阿尔法 Tipo 33/2", "3498": "Saleen S7 LM", "3518": "宝马 M8 Comp", "3520": "雷克萨斯 LC 500 '21", "3523": "#151 FD Supra", "3524": "#411 FD Corolla", "3533": "大众 Golf R '22", "3534": "MINI JCW GP '21", "3539": "#23 SIERRA ALPHA", "3540": "SIERRA RX3", "3543": "Huayra R '21", "3548": "五菱 Sunshine", "3549": "#122 AC Class 1", "3551": "#91 宝马 M2", "3554": "#1 Evolution TA", "3580": "阿斯顿·马丁 DBX '21", "3583": "奥迪 RS 6 '21", "3584": "奥迪 RS 7 '21", "3590": "雪佛兰 K10 '72", "3594": "法拉利 Roma", "3595": "SF90 Stradale", "3597": "福特 F-150 '86", "3599": "GMA T.50", "3600": "Venom F5", "3603": "#4402 Ultra 4", "3604": "#179 Hammerhead", "3605": "#240 Jimco TT", "3606": "兰博基尼 SCV12", "3608": "兰博基尼 Sián R", "3611": "玛莎拉蒂 MC20", "3616": "AMG GT Black", "3617": "梅赛德斯-AMG SL 63 '21", "3622": "日产 GTR '20", "3624": "Luftauto 911", "3625": "Rimac Nevera", "3629": "丰田 GR Yaris", "3631": "阿斯顿·马丁 Valkyrie AMR", "3645": "宝马 M4 '21", "3650": "梅赛德斯-AMG ONE", "3655": "迈凯伦 620R", "3657": "RIVIAN R1T", "3661": "莲花 Exige '18", "3662": "#37 Pro 4 Truck", "3665": "SIERRA 700R", "3667": "911 GT3 '21", "3668": "迈凯伦 Artura '23", "3670": "#4 福特 Focus", "3672": "Huracán STO", "3678": "现代 i30 N", "3686": "RZR Racing", "3687": "北极星 RZR Pro", "3692": "F-150 Lightning", "3693": "#6165 Truck", "3698": "保时捷 MissionR", "3700": "迈凯伦 Sabre '21", "3716": "莲花 Emira", "3719": "凯迪拉克 CT4-V", "3720": "凯迪拉克 CT5-V", "3722": "悍马 EV Truck", "3724": "法拉利 296 GTB", "3726": "Integra '23", "3728": "宾利 Cont GTC", "3735": "斯巴鲁 BRZ '22", "3736": "Bronco Raptor", "3737": "宝马 iX '22", "3744": "#64 日产 Z", "3745": "奥迪 R8 '20", "3750": "Montero '95", "3753": "Huracán Tecnica", "3755": "福特 SuperVan 4", "3759": "Huracán Spyder", "3760": "Cayman GT4 RS", "3761": "丰田 GR86 '22", "3763": "宝马 M2 '23", "3764": "宝马 M5 '22", "3766": "Corvette Z06 '23", "3767": "讴歌 NSX '22", "3771": "Corvette E-Ray", "3773": "本田 Civic '23", "3774": "兰博基尼 Countach '21", "3775": "兰博基尼 Aventador '21", "3781": "保时捷 911 GT3 RS 23", "3783": "大众 Rallye Golf", "3785": "Soarer '97", "3789": "五菱 Mini EV", "3795": "Meyers Manx 2.0", "3798": "MX-5 Cup '17", "3811": "Lucid Air", "3819": "斯巴鲁 WRX '22", "3823": "马自达 MX-5 RF", "3827": "IONIQ 5 N '23", "3829": "N Vision 74 '22", "3840": "Huracán Sterrato", "3846": "福特 Mustang '24", "3847": "福特 Dark Horse", "3848": "丰田 Camry '23", "3849": "福特 Raptor R", "3850": "SRT Durango '21", "3851": "丰田 Sera '91", "3852": "本田 Beat '91", "3854": "Autozam AZ-1 '93", "3855": "Figaro '91", "3856": "日产 Be-1 '87", "3858": "日产 Stagea '97", "3859": "City E II '84", "3860": "S-Cargo '89", "3865": "本田 Acty '94", "3880": "GR Corolla '23", "3886": "三菱 Evo III '95", "3891": "Revuelto ' 24", "3895": "梅赛德斯-AMG SLC 43 '20", "3903": "福特 Fiesta '23", "3904": "福特 Focus '22", "3908": "本田 e '22", "3910": "保时捷 911 Rallye", "3914": "Chaser GT TT '91", "3917": "奥迪 R8 GT '23", "3918": "Gloria GT '95", "3921": "Z NISMO '24", "3928": "现代 i20 N", "3929": "日产 PAO '89", "3933": "丰田 Chaser V", "3937": "N600 '70", "3950": "275 GTB4 '67", "3953": "911 Turbo S '23", "3954": "雪佛兰 Camaro '24", "3955": "RAM TRX '24", "3958": "Challenger '23", "3959": "Challenger '22", "3960": "斯巴鲁 Vivio '94", "3964": "丰田 Prius '24", "3980": "Sport Spider '98", "3983": "宝马 X6 M '24", "3999": "日产 Silvia 02", "4002": "兰博基尼 Temerario", "4034": "本田 Z '72", "4038": "丰田 Altezza '99", "4055": "丰田 Starlet '96", "4057": "日产 Skyline '97", "4067": "宾利 C GT '25", "4069": "宝马 M3 '88", "4081": "Gemera", "4084": "达特桑 #269 240Z", "4085": "三菱 Minicab TA", "4090": "三菱 Evo. TME", "4094": "NISMO GT-R '24", "4114": "Skyline GT-R '92", "4118": "迈凯伦 W1", "4119": "GT-R 40AE", "4124": "G 65 Traffic", "4125": "Acty Traffic", "4126": "e Traffic", "4127": "Montero Traffic", "4128": "WRX Traffic", "4129": "Stagea Traffic", "4144": "马自达 RX-7 '92", "4145": "MM 808 Wagon", "4147": "AR Giulia GTAm", "4156": "Ferrari F80 '24", "4158": "雷克萨斯 LFA FE", "4160": "S-Cargo FE", "4162": "丰田 AE86 FE", "4163": "Sunshine FE", "4164": "斯巴鲁 BRZ FE", "4165": "马自达 RX-3 FE", "4166": "宝马 M2 FE '23", "4167": "GT-R FE '12", "4168": "Mustang FE '68", "4169": "梅赛德斯-奔驰 190 E FE", "4171": "福特 F-150 FE", "4175": "福特 F-450 FE", "4179": "#12 日产 Skyline", "4197": "MX-5 FE '94", "4198": "Viper FE '99", "4199": "Tacoma FE", "4200": "莲花 Evija FE", "4205": "日产 Patrol '72", "4210": "Exige WTAC", "4211": "#19 CRX WTAC", "4212": "#32 Skyline WTAC", "4213": "#36 Silvia WTAC", "4214": "JJM Supra WTAC", "4216": "Acty 'RakuRaku'", "4221": "GR GT Prototype", "4222": "日产 Silvia 89", "4223": "Skyline GT-R '00", "4231": "#52 S2000 WTAC", "4232": "Cayman WTAC", "4234": "本田 Civic '08", "4238": "Skyline T RS '83", "4250": "丰田 AE86 TG", "4251": "本田 S2000 TG", "4252": "斯巴鲁 22B TG", "4254": "#33 H. Integra", "4255": "丰田 Crown Taxi", "4257": "丰田 JPN Taxi", "4259": "86 Stories", "4260": "GT-R ID", "4261": "保时捷 911 GT2 ID", "4263": "GR GT Prototype", "4264": "法拉利 FXX-K WP", "4265": "梅赛德斯-AMG GT WP", "4266": "宝马 M4 '21 WP", "4267": "三菱 Evo VIII WP", "4268": "福特 Raptor R WP", "4277": "#21 Civic WTAC", "4278": "丰田 LC '25", "4287": "斯巴鲁 Vivio FE", "4303": "日产 GT-R TG", "4313": "保时捷 917 FE", "4315": "Peel P50 Trolli", "4332": "T. Crown Traffic", "4333": "T. Taxi Traffic", "4341": "法拉利 J50 PO", "4342": "Sports 800 FE", "4354": "捷豹 XJ-S FE"};</script>
 <script>
 document.addEventListener('click',function(ev){
   var b=ev.target.closest('button.code'); if(!b) return;
@@ -224,15 +280,124 @@ function bindSearch(qid, scope, lockId){
       });
       d.style.display=vis?'':'none'; if(kw&&vis) d.open=true;
     });
-    document.querySelectorAll(scope+' .ev').forEach(function(c){
+    var vn=0;
+    document.querySelectorAll(scope+' .ev, '+scope+' .rc').forEach(function(c){
       var ok=!kw||(c.getAttribute('data-txt')||'').indexOf(kw)>=0;
-      c.style.display=ok?'':'none';
+      c.style.display=ok?'':'none'; if(ok&&c.className.indexOf('rc')>=0)vn++;
     });
+    var cn=document.getElementById('c'+qid.slice(1));
+    if(cn) cn.textContent=kw?('筛出 '+vn+' 台'):'';
   }
   q.addEventListener('input',apply); if(lk) lk.addEventListener('change',apply);
 }
-bindSearch('q1','#p1'); bindSearch('q2','#p2','onlyLock'); bindSearch('q3','#p3');
-// 支持用 #p1/#p2/#p3 直接定位标签页
+bindSearch('q0','#p0'); bindSearch('q1','#p1'); bindSearch('q2','#p2','onlyLock'); bindSearch('q3','#p3');
+// ── 存档体检：完全在本地读，一个字节都不外传 ──
+(function(){
+  var pick=document.getElementById('scan-pick'), inp=document.getElementById('scan-file');
+  if(!pick||!inp) return;
+  var out=document.getElementById('scan-out'), box=document.getElementById('scan');
+  var RE_ID=/(?:^|[/])(?:Livery|Tuning)_([0-9]+)_/i, RE_META=/[0-9]{9,}_[0-9A-F]{4,}[.]json$/i;
+  function b64u(b){
+    try{var s=atob((b||'').replace(/[^A-Za-z0-9+/=]/g,'')),u=new Uint8Array(s.length);
+      for(var i=0;i<s.length;i++)u[i]=s.charCodeAt(i);
+      return new TextDecoder('utf-8').decode(u);}catch(e){return '';}
+  }
+  function esc(x){return String(x).replace(/[&<>"]/g,function(c){
+    return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
+  pick.addEventListener('click',function(){inp.click();});
+  inp.addEventListener('change',function(){
+    var fs=inp.files; if(!fs||!fs.length) return;
+    var ids={}, metaFile=null, i, n;
+    for(i=0;i<fs.length;i++){
+      var p=fs[i].webkitRelativePath||fs[i].name, m=RE_ID.exec(p);
+      if(m) ids[parseInt(m[1],10)]=1;
+      if(RE_META.test(p)) metaFile=fs[i];
+    }
+    var idList=Object.keys(ids).map(Number);
+    function render(txt){
+      var CAT=window.__CAT__||{}, known=[], lines=[];
+      idList.sort(function(a,b){return a-b;});
+      for(var k=0;k<idList.length;k++) if(CAT[idList[k]]) known.push(CAT[idList[k]]);
+      var cards=document.querySelectorAll('.rc[data-cid]');
+      for(var c=0;c<cards.length;c++){
+        var cid=parseInt(cards[c].getAttribute('data-cid'),10);
+        var el=cards[c].querySelector('.own');
+        if(!el){el=document.createElement('div');el.className='own';cards[c].appendChild(el);}
+        var st=parseInt(cards[c].getAttribute('data-star'),10)||0;
+        var se=cards[c].querySelector('.stars');
+        if(ids[cid]){
+          var ns=Math.max(0,st-2);
+          el.className='own y';
+          el.textContent=(st>0&&ns<st)
+            ? '★ 存档里确认您有这台（优先级已下调）'
+            : '★ 存档里确认您有这台';
+          if(se) se.textContent='★'.repeat(ns)+'☆'.repeat(3-ns);
+          cards[c].setAttribute('data-star-eff',ns);
+        }else{
+          el.className='own n';
+          el.textContent='· 存档里未见这台（≠ 没有，见下方说明）';
+          cards[c].setAttribute('data-star-eff',st);
+        }
+      }
+      // 按「排除掉您已有的」重算顶部结论
+      (function(){
+        var best=0,nHard=0,nCar=0,nOwned=0;
+        var cs=document.querySelectorAll('.rc[data-cid]');
+        for(var q=0;q<cs.length;q++){
+          nCar++;
+          var owned=!!ids[parseInt(cs[q].getAttribute('data-cid'),10)];
+          var eff=parseInt(cs[q].getAttribute('data-star-eff'),10)||0;
+          if(owned)nOwned++;
+          if(eff>best)best=eff;
+          if(!owned&&cs[q].getAttribute('data-tag')==='买不到')nHard++;
+        }
+        var vs=document.getElementById('vsum'); if(!vs||!nCar) return;
+        var big,why;
+        if(best>=3){big='值得做';
+          why='排除掉您已有的之后，还有 <b>'+nHard+' 台车展买不到</b>——错过这周就得靠抽奖碰运气或等复刻。';}
+        else if(best===2){big='可以做，但不是刚需';
+          why='排除掉您已有的之后，剩下的车车展都买得到，但档位／价位不低，顺手做掉等于白拿一笔。';}
+        else if(nOwned===nCar){big='本周可以跳过';
+          why='本周 '+nCar+' 台奖励车，<b>存档里都确认您已经有了</b>——做不做都行。';}
+        else {big='可以不急';
+          why='剩下的奖励车<b>都能在车展直接买到</b>，随手做拿个折扣即可，不做也不损失。';}
+        vs.className='vsum v'+Math.min(3,best);
+        vs.querySelector('.vbig').textContent=big;
+        vs.querySelector('.vwhy').innerHTML=why
+          +'<br><span style="font-size:12px">（此结论已按您存档里确认已有的车做了下调；「未见」的车不参与下调。）</span>';
+      })();
+      var head='';
+      if(txt){
+        var flat='',ci=0; for(ci=0;ci<txt.length;ci++){var ch=txt.charCodeAt(ci);
+          flat+=(ch===10||ch===13||ch===9)?' · ':txt.charAt(ci);}
+        head='<div class="warn"><b>存档摘要</b>（这段是明文，直接读到的）：'+esc(flat)+'</div>';
+      } else {
+        head='<div class="warn">没读到存档摘要——请选到 <code>pgs</code> 或它下面任意一层（选到 <code>ContainersRoot</code> 也可以）。</div>';
+      }
+      var kv='<div class="kv">'
+        +'<div><b>'+idList.length+'</b><span>识别到的车辆序号</span></div>'
+        +'<div><b>'+known.length+'</b><span>其中能在车型库对上</span></div>'
+        +'<div><b>'+fs.length+'</b><span>读取的文件数</span></div></div>';
+      var tags = known.length
+        ? '<div class="tags">'+known.slice(0,60).map(function(x){return '<span class="tag2">'+esc(x)+'</span>';}).join('')
+          +(known.length>60?'<span class="tag2">…还有 '+(known.length-60)+' 台</span>':'')+'</div>'
+        : '';
+      out.innerHTML = head + kv
+        + '<p class="warn">能识别出「您涂装过 / 调校过的车」，是因为存档里 <code>Livery_&lt;序号&gt;</code>、'
+        + '<code>Tuning_&lt;序号&gt;</code> 这些目录名用的是不加密的车辆序号。完整车库清单在 '
+        + '<code>C_ProfileData</code> 里且是<b>加密</b>的，本页不读它——所以「未见」<b>不等于您没有</b>。</p>'
+        + tags;
+      box.hidden=false;
+    }
+    if(metaFile){ metaFile.text().then(function(t){
+        var sd=''; try{ sd=b64u(JSON.parse(t).Context.SaveDescription); }catch(e){}
+        render(sd);
+      }, function(){ render(''); });
+    } else { render(''); }
+  });
+})();
+
+// 支持用 #p0/#p1/#p2/#p3 直接定位标签页
 (function(){var h=location.hash.replace('#','');
  if(h){var b=document.querySelector('.tabs button[data-p="'+h+'"]'); if(b) b.click();}})();
 </script></body></html>

@@ -13,6 +13,8 @@ FH6 调校速查 · 页面构建
 """
 import os, json, re, html, io, datetime
 
+import fh6_catalog
+
 BASE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA = os.path.join(BASE, "data")
 
@@ -114,7 +116,119 @@ def norm_week(guide):
 
 
 # ─────────────── HTML ───────────────
-def build_html(guide, weeks, groups, ts):
+def value_pane(nw, cat, guide):
+    """⓪ 本周值不值得做 —— 按「买不到」+「我没有」两条判据"""
+    items = fh6_catalog.reward_items(nw)
+    rows, stars = [], []
+    for it in items:
+        car = cat.match_name(it["text"])
+        if car:
+            st, tag, why = cat.verdict(car)
+            rows.append({
+                "text": it["text"], "event": it["event"], "kind": it["kind"],
+                "name": cat.name(car), "cid": car.get("id"), "rarity": cat.rarity(car),
+                "src": "／".join(cat.sources(car)), "cost": car.get("cost") or 0,
+                "star": st, "tag": tag, "why": why, "known": True,
+            })
+        else:
+            rows.append({
+                "text": it["text"], "event": it["event"], "kind": it["kind"],
+                "name": it["text"], "cid": "", "rarity": "—", "src": "—", "cost": 0,
+                "star": 0, "tag": "未能定位",
+                "why": "车型库里没找到这台，不猜——按游戏内实际为准", "known": False,
+            })
+        stars.append(rows[-1]["star"])
+    rows.sort(key=lambda r: (-r["star"], r["name"]))
+
+    n_car = len(rows)
+    n_hard = sum(1 for r in rows if r["tag"] == "买不到")
+    best = max(stars) if stars else 0
+    if not rows:
+        lvl, big = 0, "本周奖励里没有车"
+        why = "本周 %d 个活动的奖励都是点数 / 抽奖 / 外观件，没有车辆奖励。" % len(nw)
+    elif best >= 3:
+        lvl, big = 3, "值得做"
+        why = ("本周 %d 台奖励车里，有 <b>%d 台车展买不到</b>——错过这周就得靠抽奖碰运气或等复刻。"
+               % (n_car, n_hard))
+    elif best == 2:
+        lvl, big = 2, "可以做，但不是刚需"
+        if n_hard:
+            why = ("本周 %d 台奖励车里没有只能靠季节赛拿的；有 %d 台车展买不到，值得顺手做掉。"
+                   % (n_car, n_hard))
+        else:
+            why = ("本周 %d 台奖励车<b>车展都能买到</b>，但档位／价位不低（传奇或百万级），"
+                   "顺手做掉等于白拿一笔、不做也不亏。" % n_car)
+    else:
+        lvl, big = 1, "可以不急"
+        why = "本周 %d 台奖励车<b>都能在车展直接买到</b>，随手做拿个折扣即可，不做也不损失。" % n_car
+
+    cards = []
+    for r in rows:
+        v = "v%d" % min(3, r["star"])
+        meta = ["<span>%s</span>" % esc(r["rarity"])]
+        if r["src"] != "—":
+            meta.append("<span>%s</span>" % esc(r["src"]))
+        if r["cost"]:
+            meta.append("<span>车展价 %s CR</span>" % "{:,}".format(r["cost"]))
+        cards.append(
+            "<article class='rc %s' data-cid='%s' data-txt='%s' data-star='%d' data-tag='%s'>"
+            "<div class='rhead'><span class='stars'>%s</span>"
+            "<span class='pill %s'>%s</span></div>"
+            "<h4>%s</h4>"
+            "<div class='rmeta'>%s</div>"
+            "<div class='rwhy'>%s</div>"
+            "<div class='rev'>来自：%s%s</div></article>" % (
+                v, esc(str(r["cid"])),
+                esc((r["name"] + r["text"] + r["event"]).lower()),
+                r["star"], esc(r["tag"]),
+                "★" * r["star"] + "☆" * (3 - r["star"]),
+                {"买不到": "no", "能买到": "yes"}.get(r["tag"], "unk"), esc(r["tag"]),
+                esc(r["name"]), "".join(meta), r["why"],
+                esc(r["kind"]), (" · " + esc(r["event"])) if r["event"] else ""))
+
+    others = [e for e in nw if not any(e["name"] == r["event"] and e["kind"] == r["kind"]
+                                       for r in rows)]
+    o_rows = "".join(
+        "<tr><td class='k'>%s</td><td class='nm'>%s</td><td class='rw'>%s</td></tr>" % (
+            esc(e["kind"]), esc(e["name"]), esc(e["reward"] or "—")) for e in others)
+
+    body = ["<div class='vsum v%d' id='vsum'><div class='vbig'>%s</div><div class='vwhy'>%s</div></div>"
+            % (lvl, big, why),
+            "<div class='bar'><input id='q0' placeholder='搜索奖励车 / 活动名 …'>"
+            "<span id='c0' class='cnt'></span>"
+            "<button class='btn pri' id='scan-pick'>读存档 · 本地比对</button>"
+            "<input type='file' id='scan-file' webkitdirectory directory multiple hidden></div>",
+            "<div class='scan' id='scan' hidden><div id='scan-out'></div></div>",
+            "<div class='rgrid'>%s</div>" % "".join(cards)]
+    if o_rows:
+        body.append("<details class='sec'><summary>本周其余活动（奖励不是车）"
+                    "<span class='wkstat'>%d 项</span></summary><div class='tw'>"
+                    "<table><thead><tr><th>类型</th><th>活动</th><th>奖励</th></tr></thead>"
+                    "<tbody>%s</tbody></table></div></details>" % (len(others), o_rows))
+    body.append(
+        "<details class='sec'><summary>判据是怎么定的 · 以及哪里可能不准</summary>"
+        "<div class='notes' style='border:none;margin:0;border-radius:0'>"
+        "<ul>"
+        "<li><b>第一判据「买不到」</b>：看这台车的获取途径里有没有「车展」。没有 = 买不到。"
+        "三星＝只能靠季节赛事 / 车房宝物 / 秘藏座驾；两星＝车展买不到，或档位是传奇 / 极限竞速特别版；"
+        "一星＝车展随时能买。</li>"
+        "<li><b>第二判据「我没有」</b>：<b>本页不读加密内容</b>。FH6 的完整车库清单在存档 "
+        "<code>C_ProfileData</code> 里且是加密的，社区没有公开解密实现。本页只读存档里两处不加密的地方——"
+        "顶层摘要里写明的车库车辆总数，以及 <code>Livery_&lt;序号&gt;</code> / <code>Tuning_&lt;序号&gt;</code> "
+        "目录名里的车辆序号。所以它只能确认<b>您涂装过或调校过的车</b>；其余标「未见」，"
+        "而<b>「未见」不等于没有</b>。</li>"
+        "<li><b>可能不准的地方</b>：获取途径来自社区整理，游戏版本更新后可能变；"
+        "奖励车名是从攻略文案里抽的，个别会有笔误（比如把 Dino 写成 Dion），"
+        "这类词本页会标「未能定位」而不是硬凑一个。</li>"
+        "</ul></div></details>")
+
+    return ("<div class='curbar'><b>%s</b><span class='tag'>本周</span>"
+            "<span class='dt'>%s</span><span class='dt'>· 季节每周四晚 22:30（北京时间）更新</span></div>"
+            % (esc(guide.get("title") or "-"), esc(guide.get("date") or ""))), \
+           "".join(body), n_car, n_hard
+
+
+def build_html(guide, weeks, groups, ts, cat=None):
     nw = norm_week(guide) if guide else []
     cur = weeks[0] if weeks else {"title": "-", "date": "-", "events": []}
 
@@ -260,11 +374,11 @@ def build_html(guide, weeks, groups, ts):
 
     HTML = """<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>地平线 6 · 调校速查（本周赛事 / 季节赛限定车 / 各模式车辆榜）</title>
-<meta name="description" content="极限竞速：地平线6 调校速查 —— 当周季节赛事的游戏内车辆限制原文、推荐车与 9 位调校码，18 周季节赛限定车历史，14 个组别的各模式车辆榜。数据逐周自动更新。">
+<title>地平线 6 · 本周值不值得做（附调校速查）</title>
+<meta name="description" content="极限竞速：地平线6 —— 本周季节赛值不值得做：奖励车是否车展买不到、稀有度、车展价，并可在本地读取存档比对；附当周活动限制原文、推荐车与 9 位调校码。">
 <meta name="theme-color" content="#0d6c54">
 <meta property="og:title" content="地平线 6 · 调校速查">
-<meta property="og:description" content="当周赛事限制原文 + 推荐车 + 调校码 · 季节赛限定车 · 各模式车辆榜">
+<meta property="og:description" content="本周季节赛值不值得做（奖励车是否买不到） + 当周限制原文与调校码">
 <meta property="og:type" content="website">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230d6c54'/%3E%3Ctext x='32' y='46' font-family='system-ui,sans-serif' font-size='40' font-weight='700' fill='%23ffffff' text-anchor='middle'%3E6%3C/text%3E%3C/svg%3E">
 <style>
@@ -333,6 +447,40 @@ td.cen{text-align:center;font-weight:600;color:#0a5742}
 .notes b{color:var(--tx)}
 .toast{position:fixed;left:50%;bottom:34px;transform:translateX(-50%) translateY(20px);background:#1b2027;color:#fff;padding:9px 18px;border-radius:9px;font-size:13px;opacity:0;pointer-events:none;transition:.22s}
 .toast.on{opacity:1;transform:translateX(-50%) translateY(0)}
+/* ── ⓪ 本周值不值得做 ── */
+.vsum{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 18px;margin-bottom:12px;display:flex;gap:14px;align-items:flex-start;flex-wrap:wrap}
+.vsum .vbig{font-size:19px;font-weight:700;line-height:1.3}
+.vsum .vwhy{color:var(--tx2);font-size:13px;flex:1 1 240px;min-width:200px}
+.v3{border-left:5px solid #b32d2d}.v2{border-left:5px solid #a3600a}
+.v1{border-left:5px solid #7b8494}.v0{border-left:5px solid #d7dbe0}
+.rgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(318px,1fr));gap:10px;margin-top:10px}
+.rc{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 14px}
+.rc.v3{border-left:5px solid #b32d2d}.rc.v2{border-left:5px solid #a3600a}
+.rc.v1{border-left:5px solid #98a1af}.rc.v0{border-left:5px solid #d7dbe0;opacity:.75}
+.rc h4{margin:0;font-size:15px}
+.rhead{display:flex;align-items:baseline;gap:8px;flex-wrap:wrap}
+.stars{color:#d1891b;font-size:13px;letter-spacing:1px;white-space:nowrap}
+.pill{font-size:11px;padding:2px 8px;border-radius:20px;font-weight:600;white-space:nowrap}
+.pill.no{background:#fdecec;color:#b32d2d}
+.pill.yes{background:#f0f1f3;color:#7b8494}
+.pill.unk{background:#f2ecfe;color:#6d34d6}
+.rmeta{margin-top:7px;display:flex;gap:6px;flex-wrap:wrap;font-size:12.5px;color:var(--tx2)}
+.rmeta span{background:#f3f5f8;border-radius:6px;padding:2px 8px}
+.rwhy{margin-top:7px;font-size:12.5px;color:#7a4700;background:#fff8e8;border-radius:7px;padding:6px 9px}
+.rev{margin-top:6px;font-size:12px;color:var(--tx2)}
+.own{margin-top:7px;font-size:12.5px;font-weight:600}
+.own.y{color:#0a5742}.own.n{color:#98a1af}
+.btn{font:600 13px/1 inherit;padding:9px 16px;border-radius:9px;border:1px solid var(--line);background:var(--card);color:var(--tx);cursor:pointer}
+.btn.pri{background:var(--acc);border-color:var(--acc);color:#fff}
+.btn:hover{border-color:#c3cad3}
+.cnt{font-size:12.5px;color:var(--tx2);margin-left:2px}
+.scan{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin:10px 0 4px;font-size:13px;display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.scan .warn{color:#8a6d1f;background:#fffdf3;border-radius:8px;padding:8px 11px;font-size:12.5px;flex:1 1 100%;margin:0}
+.scan .kv{display:flex;gap:16px;flex-wrap:wrap}
+.scan .kv b{font-size:16px;display:block}
+.scan .kv span{font-size:11.5px;color:var(--tx2)}
+.tags{display:flex;gap:5px;flex-wrap:wrap;margin-top:8px}
+.tag2{font-size:11.5px;background:#eef7f3;color:#0a5742;border-radius:6px;padding:2px 7px}
 /* ── 移动端适配 ── */
 @media (max-width:720px){
 .wrap{padding:14px 12px 56px}
@@ -341,11 +489,13 @@ header.top h1{font-size:19px;line-height:1.35}
 header.top p{font-size:12px}
 .kpis{gap:14px 20px;margin-top:12px}
 .kpi b{font-size:18px}
-.tabs{position:sticky;top:0;z-index:20;background:var(--bg);gap:6px;padding:9px 0;margin:8px 0;display:grid;grid-template-columns:repeat(3,1fr)}
-.tabs button{width:100%;padding:10px 4px;font-size:13px;text-align:center;white-space:nowrap}
+.tabs{position:sticky;top:0;z-index:20;background:var(--bg);gap:6px;padding:9px 0;margin:8px 0;display:grid;grid-template-columns:repeat(2,1fr)}
+.tabs button{width:100%;padding:10px 6px;font-size:12.5px;text-align:center;white-space:nowrap}
 .tl{display:none}
 .curbar{padding:11px 13px;gap:9px;margin-bottom:10px}
 .evgrid{grid-template-columns:1fr;gap:9px}
+.rgrid{grid-template-columns:1fr;gap:9px}
+.vsum{padding:12px 14px}.vsum .vbig{font-size:17px}
 .ev{padding:12px 13px}
 .cdwrap{margin-left:0;width:100%}
 .limit{margin:8px 0 6px;padding:7px 9px;font-size:12.5px}
@@ -369,10 +519,11 @@ th,td{padding:6px 7px}
 }
 </style></head><body><div class="wrap">
 <header class="top">
-  <h1>地平线 6 · 调校速查</h1>
-  <p>当周赛事的<b>游戏内限制原文</b> + 推荐车 + 调校码 · 季节赛限定车 · 各模式车辆榜<br>
-     数据逐格解出社区维护表，并交叉核对中文／英文攻略 · 单文件离线可用</p>
+  <h1>地平线 6 · 本周值不值得做</h1>
+  <p>本周奖励车<b>是否车展买不到</b> · 稀有度 · 车展价 · 可在本地读存档比对「我有没有」<br>
+     附：当周赛事限制原文 + 推荐车 + 调校码 · 季节赛限定车 · 各模式车辆榜 · 单文件离线可用</p>
   <div class="kpis">
+    <div class="kpi"><b>__NVAL__</b><span>本周奖励车（__NHARD__ 台买不到）</span></div>
     <div class="kpi"><b>__NCUR__</b><span>当周活动条目</span></div>
     <div class="kpi"><b>__NW__</b><span>个赛季周（含历史）</span></div>
     <div class="kpi"><b>__NCARS__</b><span>台各模式上榜车</span></div>
@@ -381,12 +532,17 @@ th,td{padding:6px 7px}
 </header>
 <div id="tabanchor"></div>
 <div class="tabs">
-  <button class="on" data-p="p1">① 本周赛事<span class="tl">（含限制原文）</span></button>
+  <button class="on" data-p="p0">⓪ 值不值得做<span class="tl">（本周奖励）</span></button>
+  <button data-p="p1">① 本周赛事<span class="tl">（含限制原文）</span></button>
   <button data-p="p2">② 季节赛限定车<span class="tl">（__NW__ 周历史）</span></button>
   <button data-p="p3">③ 各模式车辆榜</button>
 </div>
 
-<div class="pane on" id="p1">
+<div class="pane on" id="p0">
+__VALBODY__
+</div>
+
+<div class="pane" id="p1">
   <div class="curbar">
     <b>__CURTITLE__</b><span class="tag">当周有效</span><span class="dt">__CURDATE__</span>
     <span class="dt">· 季节每周四晚 22:30（北京时间）更新</span>
@@ -415,6 +571,16 @@ th,td{padding:6px 7px}
 <div class="notes">
   <h3>怎么用这份表</h3>
   <ul>
+    <li><b>⓪ 值不值得做</b>：先看<b>「买不到」</b>——那台车的获取途径里没有「车展」，
+        也就是这周不拿、之后就得靠抽奖碰运气或等复刻。三颗星＝只能靠季节赛事/车房宝物/秘藏座驾拿到；
+        两颗星＝车展买不到或档位很高（传奇／极限竞速特别版）；一颗星＝车展随时能买，不急。</li>
+    <li><b>「我有没有」这一列怎么来的</b>：FH6 的完整车库清单在存档里是<b>加密</b>的，
+        社区目前没有公开的解密实现，所以这一列<b>不读加密内容</b>。它读的是存档里两处不加密的地方——
+        顶层的存档摘要（写明了车库车辆总数）与 <code>Livery_&lt;序号&gt;/Tuning_&lt;序号&gt;</code> 目录名。
+        因此它只能标出<b>您涂装过或调校过的车</b>，其余显示「未见」——「未见」<b>不等于没有</b>，只是这份存档没提供证据。</li>
+    <li><b>读档会改变结论</b>：存档里确认您已经有的奖励车，星级会<b>下调</b>（已有的重复车不太值得再跑一趟）；
+        「未见」的车<b>不做任何上调</b>——因为「未见」不等于没有。顶部那句结论会跟着重算。</li>
+    <li>存档全程在您浏览器内读取，<b>不上传任何内容</b>，也不写入存档目录。</li>
     <li><b>① 本周赛事</b>里每张卡片的黄色块是<b>游戏内的限制原文</b>（如「皮卡和四轮驱动车 · B 600」），
         照它选车就不会被拦在赛外；蓝色「推荐」徽标来自中文／英文攻略实测验证过的调校师。</li>
     <li><b>红色「必须用」</b>＝每周挑战，必须拥有并驾驶指定那一台车（通常是 4 个步骤按顺序做完）。</li>
@@ -432,10 +598,14 @@ th,td{padding:6px 7px}
         两者给的推荐车不同，属于不同调校师的方案，均可用。</li>
     <li><b>季节赛限定车 / 各模式车辆榜</b>：腾讯文档「地平线6线上车辆调校推荐」，逐格解出（非抄录）。</li>
     <li>原表个别单元格有笔误（如「调教代码」、日期漏「日」字、某周日期区间偏长），本页按原样保留，未做臆改。</li>
+    <li><b>奖励车的稀有度与获取途径</b>：社区库 Nova's Autoshow（<a href="https://forza.nerdyderg.com" target="_blank" rel="noopener">forza.nerdyderg.com</a>）；
+        中文车名与车辆序号取自 B站小玩具「地平线六车辆数据库」（作者 Dr.Hydra）。两者均非官方数据。</li>
+    <li>「奖励车是不是车展买不到」是按获取途径字段判断的，<b>游戏版本更新后可能变化</b>；以游戏内「车展」实际是否在售为准。</li>
     <li>数据快照：__TS_FULL__　·　页面由 <code>scripts/update.py</code> 自动生成。</li>
   </ul>
 </div>
 </div><div class="toast" id="toast">已复制</div>
+<script>window.__CAT__=__CATJSON__;</script>
 <script>
 document.addEventListener('click',function(ev){
   var b=ev.target.closest('button.code'); if(!b) return;
@@ -479,18 +649,135 @@ function bindSearch(qid, scope, lockId){
       });
       d.style.display=vis?'':'none'; if(kw&&vis) d.open=true;
     });
-    document.querySelectorAll(scope+' .ev').forEach(function(c){
+    var vn=0;
+    document.querySelectorAll(scope+' .ev, '+scope+' .rc').forEach(function(c){
       var ok=!kw||(c.getAttribute('data-txt')||'').indexOf(kw)>=0;
-      c.style.display=ok?'':'none';
+      c.style.display=ok?'':'none'; if(ok&&c.className.indexOf('rc')>=0)vn++;
     });
+    var cn=document.getElementById('c'+qid.slice(1));
+    if(cn) cn.textContent=kw?('筛出 '+vn+' 台'):'';
   }
   q.addEventListener('input',apply); if(lk) lk.addEventListener('change',apply);
 }
-bindSearch('q1','#p1'); bindSearch('q2','#p2','onlyLock'); bindSearch('q3','#p3');
-// 支持用 #p1/#p2/#p3 直接定位标签页
+bindSearch('q0','#p0'); bindSearch('q1','#p1'); bindSearch('q2','#p2','onlyLock'); bindSearch('q3','#p3');
+// ── 存档体检：完全在本地读，一个字节都不外传 ──
+(function(){
+  var pick=document.getElementById('scan-pick'), inp=document.getElementById('scan-file');
+  if(!pick||!inp) return;
+  var out=document.getElementById('scan-out'), box=document.getElementById('scan');
+  var RE_ID=/(?:^|[/])(?:Livery|Tuning)_([0-9]+)_/i, RE_META=/[0-9]{9,}_[0-9A-F]{4,}[.]json$/i;
+  function b64u(b){
+    try{var s=atob((b||'').replace(/[^A-Za-z0-9+/=]/g,'')),u=new Uint8Array(s.length);
+      for(var i=0;i<s.length;i++)u[i]=s.charCodeAt(i);
+      return new TextDecoder('utf-8').decode(u);}catch(e){return '';}
+  }
+  function esc(x){return String(x).replace(/[&<>"]/g,function(c){
+    return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
+  pick.addEventListener('click',function(){inp.click();});
+  inp.addEventListener('change',function(){
+    var fs=inp.files; if(!fs||!fs.length) return;
+    var ids={}, metaFile=null, i, n;
+    for(i=0;i<fs.length;i++){
+      var p=fs[i].webkitRelativePath||fs[i].name, m=RE_ID.exec(p);
+      if(m) ids[parseInt(m[1],10)]=1;
+      if(RE_META.test(p)) metaFile=fs[i];
+    }
+    var idList=Object.keys(ids).map(Number);
+    function render(txt){
+      var CAT=window.__CAT__||{}, known=[], lines=[];
+      idList.sort(function(a,b){return a-b;});
+      for(var k=0;k<idList.length;k++) if(CAT[idList[k]]) known.push(CAT[idList[k]]);
+      var cards=document.querySelectorAll('.rc[data-cid]');
+      for(var c=0;c<cards.length;c++){
+        var cid=parseInt(cards[c].getAttribute('data-cid'),10);
+        var el=cards[c].querySelector('.own');
+        if(!el){el=document.createElement('div');el.className='own';cards[c].appendChild(el);}
+        var st=parseInt(cards[c].getAttribute('data-star'),10)||0;
+        var se=cards[c].querySelector('.stars');
+        if(ids[cid]){
+          var ns=Math.max(0,st-2);
+          el.className='own y';
+          el.textContent=(st>0&&ns<st)
+            ? '★ 存档里确认您有这台（优先级已下调）'
+            : '★ 存档里确认您有这台';
+          if(se) se.textContent='★'.repeat(ns)+'☆'.repeat(3-ns);
+          cards[c].setAttribute('data-star-eff',ns);
+        }else{
+          el.className='own n';
+          el.textContent='· 存档里未见这台（≠ 没有，见下方说明）';
+          cards[c].setAttribute('data-star-eff',st);
+        }
+      }
+      // 按「排除掉您已有的」重算顶部结论
+      (function(){
+        var best=0,nHard=0,nCar=0,nOwned=0;
+        var cs=document.querySelectorAll('.rc[data-cid]');
+        for(var q=0;q<cs.length;q++){
+          nCar++;
+          var owned=!!ids[parseInt(cs[q].getAttribute('data-cid'),10)];
+          var eff=parseInt(cs[q].getAttribute('data-star-eff'),10)||0;
+          if(owned)nOwned++;
+          if(eff>best)best=eff;
+          if(!owned&&cs[q].getAttribute('data-tag')==='买不到')nHard++;
+        }
+        var vs=document.getElementById('vsum'); if(!vs||!nCar) return;
+        var big,why;
+        if(best>=3){big='值得做';
+          why='排除掉您已有的之后，还有 <b>'+nHard+' 台车展买不到</b>——错过这周就得靠抽奖碰运气或等复刻。';}
+        else if(best===2){big='可以做，但不是刚需';
+          why='排除掉您已有的之后，剩下的车车展都买得到，但档位／价位不低，顺手做掉等于白拿一笔。';}
+        else if(nOwned===nCar){big='本周可以跳过';
+          why='本周 '+nCar+' 台奖励车，<b>存档里都确认您已经有了</b>——做不做都行。';}
+        else {big='可以不急';
+          why='剩下的奖励车<b>都能在车展直接买到</b>，随手做拿个折扣即可，不做也不损失。';}
+        vs.className='vsum v'+Math.min(3,best);
+        vs.querySelector('.vbig').textContent=big;
+        vs.querySelector('.vwhy').innerHTML=why
+          +'<br><span style="font-size:12px">（此结论已按您存档里确认已有的车做了下调；「未见」的车不参与下调。）</span>';
+      })();
+      var head='';
+      if(txt){
+        var flat='',ci=0; for(ci=0;ci<txt.length;ci++){var ch=txt.charCodeAt(ci);
+          flat+=(ch===10||ch===13||ch===9)?' · ':txt.charAt(ci);}
+        head='<div class="warn"><b>存档摘要</b>（这段是明文，直接读到的）：'+esc(flat)+'</div>';
+      } else {
+        head='<div class="warn">没读到存档摘要——请选到 <code>pgs</code> 或它下面任意一层（选到 <code>ContainersRoot</code> 也可以）。</div>';
+      }
+      var kv='<div class="kv">'
+        +'<div><b>'+idList.length+'</b><span>识别到的车辆序号</span></div>'
+        +'<div><b>'+known.length+'</b><span>其中能在车型库对上</span></div>'
+        +'<div><b>'+fs.length+'</b><span>读取的文件数</span></div></div>';
+      var tags = known.length
+        ? '<div class="tags">'+known.slice(0,60).map(function(x){return '<span class="tag2">'+esc(x)+'</span>';}).join('')
+          +(known.length>60?'<span class="tag2">…还有 '+(known.length-60)+' 台</span>':'')+'</div>'
+        : '';
+      out.innerHTML = head + kv
+        + '<p class="warn">能识别出「您涂装过 / 调校过的车」，是因为存档里 <code>Livery_&lt;序号&gt;</code>、'
+        + '<code>Tuning_&lt;序号&gt;</code> 这些目录名用的是不加密的车辆序号。完整车库清单在 '
+        + '<code>C_ProfileData</code> 里且是<b>加密</b>的，本页不读它——所以「未见」<b>不等于您没有</b>。</p>'
+        + tags;
+      box.hidden=false;
+    }
+    if(metaFile){ metaFile.text().then(function(t){
+        var sd=''; try{ sd=b64u(JSON.parse(t).Context.SaveDescription); }catch(e){}
+        render(sd);
+      }, function(){ render(''); });
+    } else { render(''); }
+  });
+})();
+
+// 支持用 #p0/#p1/#p2/#p3 直接定位标签页
 (function(){var h=location.hash.replace('#','');
  if(h){var b=document.querySelector('.tabs button[data-p="'+h+'"]'); if(b) b.click();}})();
 </script></body></html>"""
+
+    if cat is None:
+        cat = fh6_catalog.Catalog(fh6_catalog.fetch_catalog(verbose=False))
+    val_head, val_body, n_val, n_hard = value_pane(nw, cat, guide)
+    cat_names = json.dumps(
+        {str(c["id"]): (c.get("short") or c.get("model") or "")
+         for c in cat.cars if isinstance(c.get("id"), int)},
+        ensure_ascii=False).replace("<", "\\u003c")
 
     HTML = (HTML.replace("__NCUR__", str(len(nw)))
                 .replace("__NW__", str(len(weeks)))
@@ -504,7 +791,11 @@ bindSearch('q1','#p1'); bindSearch('q2','#p2','onlyLock'); bindSearch('q3','#p3'
                 .replace("__WEEKSBODY__", weeks_body)
                 .replace("__NCIDX__", str(len(cars)))
                 .replace("__CARROWS__", car_rows)
-                .replace("__GROUPSBODY__", groups_body))
+                .replace("__GROUPSBODY__", groups_body)
+                .replace("__VALBODY__", val_head + val_body)
+                .replace("__CATJSON__", cat_names)
+                .replace("__NVAL__", str(n_val))
+                .replace("__NHARD__", str(n_hard)))
     return HTML, nw, cars
 
 
@@ -514,6 +805,24 @@ def build_md(guide, weeks, groups, ts, nw):
     md.write("# 地平线 6 · 调校速查\n\n")
     md.write("> 数据快照：%s\n> 当周限制原文来自 vgover（中文）／TheXboxHub（英文）交叉核对；"
              "季节赛与车辆榜来自腾讯文档逐格解出\n\n" % ts)
+    md.write("## ⓪ 本周值不值得做\n\n")
+    md.write("| 奖励车 | 星级 | 结论 | 稀有度 | 获取途径 | 车展价 | 来自 |\n|---|---|---|---|---|---|---|\n")
+    try:
+        _cat = fh6_catalog.Catalog(fh6_catalog.fetch_catalog(verbose=False))
+        for _it in fh6_catalog.reward_items(nw):
+            _c = _cat.match_name(_it["text"])
+            if _c:
+                _st, _tag, _ = _cat.verdict(_c)
+                md.write("| %s | %s | %s | %s | %s | %s | %s |\n" % (
+                    _cat.name(_c), "★" * _st, _tag, _cat.rarity(_c),
+                    "／".join(_cat.sources(_c)), "{:,}".format(_c.get("cost") or 0),
+                    _it["kind"]))
+            else:
+                md.write("| %s |  | 未能定位 |  |  |  | %s |\n" % (
+                    _it["text"].replace("|", "/"), _it["kind"]))
+    except Exception as _e:
+        md.write("| （目录抓取失败：%s） |  |  |  |  |  |  |\n" % _e)
+    md.write("\n")
     md.write("## ① 本周赛事（%s %s，%s）\n\n"
              % (guide.get("series", ""), guide.get("season", ""), guide.get("date", "")))
     md.write("| 类型 | 活动 | 游戏限制原文 | 推荐车 | 调校码 | 分数 | 奖励 |\n|---|---|---|---|---|---|---|\n")
@@ -551,7 +860,12 @@ def main():
     weeks = load("weeks.json", [])
     groups = load("groups.json", [])
     ts = datetime.datetime.now().strftime("%Y-%m-%d %H:%M")
-    html_text, nw, cars = build_html(guide, weeks, groups, ts)
+    try:
+        cat = fh6_catalog.Catalog(fh6_catalog.fetch_catalog(verbose=True))
+    except Exception as ex:
+        print("  [目录] 抓取失败，改用本地缓存：%r" % (ex,))
+        cat = fh6_catalog.Catalog(json.load(io.open(os.path.join(DATA, "catalog.json"), encoding="utf-8")))
+    html_text, nw, cars = build_html(guide, weeks, groups, ts, cat)
     out_html = os.path.join(BASE, "FH6-调校速查.html")
     open(out_html, "w", encoding="utf-8").write(html_text)
 
@@ -563,9 +877,10 @@ def main():
     md = build_md(guide, weeks, groups, ts, nw)
     out_md = os.path.join(BASE, "FH6-调校速查.md")
     open(out_md, "w", encoding="utf-8").write(md)
-    print("OK  html=%.0f KB  md=%.0f KB | 当周 %d 项 · %d 周 · %d 台车"
+    print("OK  html=%.0f KB  md=%.0f KB | 当周 %d 项 · %d 周 · %d 台车 · 目录 %d 台"
           % (len(html_text) / 1024, len(md) / 1024, len(nw), len(weeks),
-             sum(len([e for e in g["entries"] if e.get("车辆型号")]) for g in groups)))
+             sum(len([e for e in g["entries"] if e.get("车辆型号")]) for g in groups),
+             len(cat.cars)))
     return out_html
 
 
