@@ -1,7 +1,9 @@
 # 地平线 6 · 调校速查
 
-> 数据快照：2026-10-01 16:57
+> 数据快照：2026-10-01 17:17
 > 当周限制原文来自 vgover（中文）／TheXboxHub（英文）交叉核对；季节赛与车辆榜来自腾讯文档逐格解出
+
+> 车辆数据库（B站 · Dr.Hydra）：https://www.bilibili.com/toy/forzahorizon6/index.html
 
 ## ⓪ 本周值不值得做
 

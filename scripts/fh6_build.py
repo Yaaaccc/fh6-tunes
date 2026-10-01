@@ -228,6 +228,11 @@ def value_pane(nw, cat, guide):
            "".join(body), n_car, n_hard
 
 
+# 站外入口：B 站「地平线六车辆数据库」的外壳页。
+# 用外壳地址而不是内层 app 地址 —— 内层带版本号（...-v13574/），官方升级后会变，写死就会失效。
+TOY_URL = "https://www.bilibili.com/toy/forzahorizon6/index.html"
+
+
 def build_html(guide, weeks, groups, ts, cat=None):
     nw = norm_week(guide) if guide else []
     cur = weeks[0] if weeks else {"title": "-", "date": "-", "events": []}
@@ -387,6 +392,11 @@ def build_html(guide, weeks, groups, ts, cat=None):
 body{margin:0;background:var(--bg);color:var(--tx);font:14px/1.6 "Microsoft YaHei","PingFang SC",system-ui,sans-serif}
 .wrap{max-width:1180px;margin:0 auto;padding:22px 18px 70px}
 header.top{padding:22px 26px;background:linear-gradient(135deg,#0d6c54,#12996f);color:#fff;border-radius:16px}
+.htop{display:flex;gap:16px;align-items:flex-start;justify-content:space-between}
+.htop h1{min-width:0}
+.xnav{flex:0 0 auto;display:flex;flex-direction:column;align-items:center;gap:1px;padding:10px 15px;border-radius:11px;text-decoration:none;background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.42);color:#fff;font-size:13.5px;font-weight:600;line-height:1.25;white-space:nowrap}
+.xnav i{font-style:normal;font-size:11px;font-weight:400;opacity:.88}
+.xnav:hover{background:rgba(255,255,255,.28)}
 header.top h1{margin:0 0 6px;font-size:23px}
 header.top p{margin:4px 0 0;opacity:.92;font-size:13px}
 .kpis{display:flex;gap:22px;margin-top:14px;flex-wrap:wrap}
@@ -485,6 +495,8 @@ td.cen{text-align:center;font-weight:600;color:#0a5742}
 @media (max-width:720px){
 .wrap{padding:14px 12px 56px}
 header.top{padding:18px 18px;border-radius:14px}
+.htop{flex-direction:column;align-items:stretch;gap:10px}
+.xnav{flex-direction:row;justify-content:center;gap:7px;padding:9px 13px}
 header.top h1{font-size:19px;line-height:1.35}
 header.top p{font-size:12px}
 .kpis{gap:14px 20px;margin-top:12px}
@@ -519,7 +531,10 @@ th,td{padding:6px 7px}
 }
 </style></head><body><div class="wrap">
 <header class="top">
-  <h1>地平线 6 · 本周值不值得做</h1>
+  <div class="htop">
+    <h1>地平线 6 · 本周值不值得做</h1>
+    <a class="xnav" href="__TOYURL__" target="_blank" rel="noopener">车辆数据库<i>站外 · B站 ↗</i></a>
+  </div>
   <p>本周奖励车<b>是否车展买不到</b> · 稀有度 · 车展价 · 可在本地读存档比对「我有没有」<br>
      附：当周赛事限制原文 + 推荐车 + 调校码 · 季节赛限定车 · 各模式车辆榜 · 单文件离线可用</p>
   <div class="kpis">
@@ -599,7 +614,7 @@ __VALBODY__
     <li><b>季节赛限定车 / 各模式车辆榜</b>：腾讯文档「地平线6线上车辆调校推荐」，逐格解出（非抄录）。</li>
     <li>原表个别单元格有笔误（如「调教代码」、日期漏「日」字、某周日期区间偏长），本页按原样保留，未做臆改。</li>
     <li><b>奖励车的稀有度与获取途径</b>：社区库 Nova's Autoshow（<a href="https://forza.nerdyderg.com" target="_blank" rel="noopener">forza.nerdyderg.com</a>）；
-        中文车名与车辆序号取自 B站小玩具「地平线六车辆数据库」（作者 Dr.Hydra）。两者均非官方数据。</li>
+        中文车名与车辆序号取自 B站小玩具「<a href="https://www.bilibili.com/toy/forzahorizon6/index.html" target="_blank" rel="noopener">地平线六车辆数据库</a>」（作者 Dr.Hydra）。两者均非官方数据。</li>
     <li>「奖励车是不是车展买不到」是按获取途径字段判断的，<b>游戏版本更新后可能变化</b>；以游戏内「车展」实际是否在售为准。</li>
     <li>数据快照：__TS_FULL__　·　页面由 <code>scripts/update.py</code> 自动生成。</li>
   </ul>
@@ -784,6 +799,7 @@ bindSearch('q0','#p0'); bindSearch('q1','#p1'); bindSearch('q2','#p2','onlyLock'
                 .replace("__NCARS__", str(n_cars))
                 .replace("__TS__", esc(ts))
                 .replace("__TS_FULL__", esc(ts))
+                .replace("__TOYURL__", TOY_URL)
                 .replace("__CURTITLE__", esc(cur_title))
                 .replace("__CURDATE__", esc(guide.get("date") or cur.get("date", "")))
                 .replace("__WEEKBODY__", week_body)
@@ -805,6 +821,7 @@ def build_md(guide, weeks, groups, ts, nw):
     md.write("# 地平线 6 · 调校速查\n\n")
     md.write("> 数据快照：%s\n> 当周限制原文来自 vgover（中文）／TheXboxHub（英文）交叉核对；"
              "季节赛与车辆榜来自腾讯文档逐格解出\n\n" % ts)
+    md.write("> 车辆数据库（B站 · Dr.Hydra）：%s\n\n" % TOY_URL)
     md.write("## ⓪ 本周值不值得做\n\n")
     md.write("| 奖励车 | 星级 | 结论 | 稀有度 | 获取途径 | 车展价 | 来自 |\n|---|---|---|---|---|---|---|\n")
     try:

@@ -63,7 +63,7 @@
 | 来源 | 用途 |
 |---|---|
 | [Nova's Autoshow](https://forza.nerdyderg.com/)（社区维护） | 车辆**稀有度**与**获取途径**（游戏本身不带这两个字段，由社区手抄）。经与 B站目录全量对账：稀有度 556/556 一致，「车展买不到」这一判据 154 台 vs 154 台、**分歧 0** |
-| [B站小玩具「地平线六车辆数据库」](https://www.bilibili.com/toy/forzahorizon6/index.html)（作者 Dr.Hydra） | 中文车名、中文档位名、**车辆序号 `id`**（存档里 `Livery_<序号>` 要用它才能对上） |
+| [B站小玩具「地平线六车辆数据库」](https://www.bilibili.com/toy/forzahorizon6/index.html)（作者 Dr.Hydra） | 中文车名、中文档位名、**车辆序号 `id`**（存档里 `Livery_<序号>` 要用它才能对上）。页面右上角的**「车辆数据库」按钮**即跳此页（新标签页打开、站外） |
 | [腾讯文档《地平线6线上车辆调校推荐》](https://docs.qq.com/sheet/DYWZVRWR0dnh3aHhZ)（社区维护） | 季节赛限定车（18 周历史）、14 个组别的各模式车辆榜 |
 | [vgover（电玩帮）](https://www.vgover.com/) 每季季节赛事攻略 | 游戏内**车辆类别限制原文**、推荐车、调校码 |
 | [TheXboxHub](https://www.thexboxhub.com/) Festival Playlist 指南 | 交叉核对 |
